@@ -1,0 +1,2334 @@
+{
+  "metadata": {
+    "years": [
+      1950,
+      1952,
+      1954,
+      1956,
+      1958,
+      1960,
+      2000,
+      2002,
+      2004,
+      2006,
+      2008,
+      2010,
+      2012,
+      2016,
+      2018,
+      2020,
+      2024
+    ],
+    "counties_count": 55,
+    "contests": [
+      "attorney_general",
+      "auditor",
+      "commissioner_of_agriculture",
+      "governor",
+      "president",
+      "secretary_of_state",
+      "state_treasurer",
+      "us_senate"
+    ],
+    "source_file": "Data\\wv_election_results_aggregated.json"
+  },
+  "focus_contest": "president",
+  "focus_earliest_year": 1956,
+  "focus_latest_year": 2024,
+  "focus_earliest_statewide": {
+    "dem_votes": 381533,
+    "rep_votes": 449297,
+    "other_votes": 0,
+    "total_votes": 830830,
+    "two_party_total": 830830,
+    "margin": -67764,
+    "margin_pct": -8.16,
+    "winner": "REP"
+  },
+  "focus_latest_statewide": {
+    "dem_votes": 214309,
+    "rep_votes": 533556,
+    "other_votes": 14525,
+    "total_votes": 762390,
+    "two_party_total": 747865,
+    "margin": -319247,
+    "margin_pct": -42.69,
+    "winner": "REP"
+  },
+  "focus_statewide_shift_toward_dem_pct": -34.53,
+  "presidential_statewide_by_year": [
+    {
+      "year": 1956,
+      "dem_votes": 381533,
+      "rep_votes": 449297,
+      "other_votes": 0,
+      "total_votes": 830830,
+      "two_party_total": 830830,
+      "margin": -67764,
+      "margin_pct": -8.16,
+      "winner": "REP"
+    },
+    {
+      "year": 1960,
+      "dem_votes": 441786,
+      "rep_votes": 395995,
+      "other_votes": 0,
+      "total_votes": 837781,
+      "two_party_total": 837781,
+      "margin": 45791,
+      "margin_pct": 5.47,
+      "winner": "DEM"
+    },
+    {
+      "year": 2000,
+      "dem_votes": 295497,
+      "rep_votes": 336475,
+      "other_votes": 16152,
+      "total_votes": 648124,
+      "two_party_total": 631972,
+      "margin": -40978,
+      "margin_pct": -6.48,
+      "winner": "REP"
+    },
+    {
+      "year": 2004,
+      "dem_votes": 334962,
+      "rep_votes": 432994,
+      "other_votes": 5624,
+      "total_votes": 773580,
+      "two_party_total": 767956,
+      "margin": -98032,
+      "margin_pct": -12.77,
+      "winner": "REP"
+    },
+    {
+      "year": 2008,
+      "dem_votes": 469077,
+      "rep_votes": 630320,
+      "other_votes": 77244,
+      "total_votes": 1176641,
+      "two_party_total": 1099397,
+      "margin": -161243,
+      "margin_pct": -14.67,
+      "winner": "REP"
+    },
+    {
+      "year": 2012,
+      "dem_votes": 119823,
+      "rep_votes": 194402,
+      "other_votes": 98289,
+      "total_votes": 412514,
+      "two_party_total": 314225,
+      "margin": -74579,
+      "margin_pct": -23.73,
+      "winner": "REP"
+    },
+    {
+      "year": 2016,
+      "dem_votes": 188794,
+      "rep_votes": 489371,
+      "other_votes": 34886,
+      "total_votes": 713051,
+      "two_party_total": 678165,
+      "margin": -300577,
+      "margin_pct": -44.32,
+      "winner": "REP"
+    },
+    {
+      "year": 2020,
+      "dem_votes": 235984,
+      "rep_votes": 545382,
+      "other_votes": 13286,
+      "total_votes": 794652,
+      "two_party_total": 781366,
+      "margin": -309398,
+      "margin_pct": -39.6,
+      "winner": "REP"
+    },
+    {
+      "year": 2024,
+      "dem_votes": 214309,
+      "rep_votes": 533556,
+      "other_votes": 14525,
+      "total_votes": 762390,
+      "two_party_total": 747865,
+      "margin": -319247,
+      "margin_pct": -42.69,
+      "winner": "REP"
+    }
+  ],
+  "latest_presidential_statewide": {
+    "dem_votes": 214309,
+    "rep_votes": 533556,
+    "other_votes": 14525,
+    "total_votes": 762390,
+    "two_party_total": 747865,
+    "margin": -319247,
+    "margin_pct": -42.69,
+    "winner": "REP"
+  },
+  "top_shift_toward_republican": [
+    {
+      "county": "Raleigh",
+      "earliest_margin_pct": 49.82,
+      "latest_margin_pct": -55.25,
+      "shift_toward_dem_pct": -105.07
+    },
+    {
+      "county": "Mingo",
+      "earliest_margin_pct": 11.7,
+      "latest_margin_pct": -74.7,
+      "shift_toward_dem_pct": -86.4
+    },
+    {
+      "county": "Logan",
+      "earliest_margin_pct": 16.57,
+      "latest_margin_pct": -67.43,
+      "shift_toward_dem_pct": -84.0
+    },
+    {
+      "county": "McDowell",
+      "earliest_margin_pct": 20.45,
+      "latest_margin_pct": -61.24,
+      "shift_toward_dem_pct": -81.69
+    },
+    {
+      "county": "Webster",
+      "earliest_margin_pct": 11.12,
+      "latest_margin_pct": -67.6,
+      "shift_toward_dem_pct": -78.72
+    },
+    {
+      "county": "Boone",
+      "earliest_margin_pct": 15.66,
+      "latest_margin_pct": -58.74,
+      "shift_toward_dem_pct": -74.4
+    },
+    {
+      "county": "Wyoming",
+      "earliest_margin_pct": 0.52,
+      "latest_margin_pct": -73.81,
+      "shift_toward_dem_pct": -74.33
+    },
+    {
+      "county": "Fayette",
+      "earliest_margin_pct": 22.89,
+      "latest_margin_pct": -42.64,
+      "shift_toward_dem_pct": -65.53
+    },
+    {
+      "county": "Gilmer",
+      "earliest_margin_pct": 6.39,
+      "latest_margin_pct": -57.89,
+      "shift_toward_dem_pct": -64.28
+    },
+    {
+      "county": "Lincoln",
+      "earliest_margin_pct": 0.18,
+      "latest_margin_pct": -63.71,
+      "shift_toward_dem_pct": -63.89
+    },
+    {
+      "county": "Calhoun",
+      "earliest_margin_pct": -4.13,
+      "latest_margin_pct": -66.1,
+      "shift_toward_dem_pct": -61.97
+    },
+    {
+      "county": "Pendleton",
+      "earliest_margin_pct": 1.01,
+      "latest_margin_pct": -59.61,
+      "shift_toward_dem_pct": -60.62
+    },
+    {
+      "county": "Hardy",
+      "earliest_margin_pct": 1.28,
+      "latest_margin_pct": -58.79,
+      "shift_toward_dem_pct": -60.07
+    },
+    {
+      "county": "Clay",
+      "earliest_margin_pct": -3.52,
+      "latest_margin_pct": -63.49,
+      "shift_toward_dem_pct": -59.97
+    },
+    {
+      "county": "Braxton",
+      "earliest_margin_pct": 6.42,
+      "latest_margin_pct": -52.79,
+      "shift_toward_dem_pct": -59.21
+    },
+    {
+      "county": "Wirt",
+      "earliest_margin_pct": -9.89,
+      "latest_margin_pct": -67.66,
+      "shift_toward_dem_pct": -57.77
+    },
+    {
+      "county": "Nicholas",
+      "earliest_margin_pct": -3.78,
+      "latest_margin_pct": -61.15,
+      "shift_toward_dem_pct": -57.37
+    },
+    {
+      "county": "Hampshire",
+      "earliest_margin_pct": -6.36,
+      "latest_margin_pct": -63.49,
+      "shift_toward_dem_pct": -57.13
+    },
+    {
+      "county": "Summers",
+      "earliest_margin_pct": 2.02,
+      "latest_margin_pct": -52.45,
+      "shift_toward_dem_pct": -54.47
+    },
+    {
+      "county": "Brooke",
+      "earliest_margin_pct": 8.67,
+      "latest_margin_pct": -45.44,
+      "shift_toward_dem_pct": -54.11
+    },
+    {
+      "county": "Mercer",
+      "earliest_margin_pct": -5.06,
+      "latest_margin_pct": -58.22,
+      "shift_toward_dem_pct": -53.16
+    },
+    {
+      "county": "Barbour",
+      "earliest_margin_pct": -9.23,
+      "latest_margin_pct": -61.75,
+      "shift_toward_dem_pct": -52.52
+    },
+    {
+      "county": "Hancock",
+      "earliest_margin_pct": 4.24,
+      "latest_margin_pct": -47.59,
+      "shift_toward_dem_pct": -51.83
+    },
+    {
+      "county": "Monroe",
+      "earliest_margin_pct": -12.01,
+      "latest_margin_pct": -63.0,
+      "shift_toward_dem_pct": -50.99
+    },
+    {
+      "county": "Wayne",
+      "earliest_margin_pct": -4.81,
+      "latest_margin_pct": -54.33,
+      "shift_toward_dem_pct": -49.52
+    },
+    {
+      "county": "Tucker",
+      "earliest_margin_pct": -4.42,
+      "latest_margin_pct": -49.99,
+      "shift_toward_dem_pct": -45.57
+    },
+    {
+      "county": "Pleasants",
+      "earliest_margin_pct": -15.11,
+      "latest_margin_pct": -60.1,
+      "shift_toward_dem_pct": -44.99
+    },
+    {
+      "county": "Pocahontas",
+      "earliest_margin_pct": -7.39,
+      "latest_margin_pct": -51.42,
+      "shift_toward_dem_pct": -44.03
+    },
+    {
+      "county": "Wetzel",
+      "earliest_margin_pct": -13.76,
+      "latest_margin_pct": -56.95,
+      "shift_toward_dem_pct": -43.19
+    },
+    {
+      "county": "Putnam",
+      "earliest_margin_pct": -7.81,
+      "latest_margin_pct": -47.21,
+      "shift_toward_dem_pct": -39.4
+    },
+    {
+      "county": "Greenbrier",
+      "earliest_margin_pct": -5.98,
+      "latest_margin_pct": -42.96,
+      "shift_toward_dem_pct": -36.98
+    },
+    {
+      "county": "Marshall",
+      "earliest_margin_pct": -15.61,
+      "latest_margin_pct": -50.96,
+      "shift_toward_dem_pct": -35.35
+    },
+    {
+      "county": "Roane",
+      "earliest_margin_pct": -19.71,
+      "latest_margin_pct": -54.95,
+      "shift_toward_dem_pct": -35.24
+    },
+    {
+      "county": "Mason",
+      "earliest_margin_pct": -25.18,
+      "latest_margin_pct": -59.18,
+      "shift_toward_dem_pct": -34.0
+    },
+    {
+      "county": "Mineral",
+      "earliest_margin_pct": -28.24,
+      "latest_margin_pct": -60.99,
+      "shift_toward_dem_pct": -32.75
+    },
+    {
+      "county": "Marion",
+      "earliest_margin_pct": 0.25,
+      "latest_margin_pct": -31.98,
+      "shift_toward_dem_pct": -32.23
+    },
+    {
+      "county": "Taylor",
+      "earliest_margin_pct": -21.27,
+      "latest_margin_pct": -52.39,
+      "shift_toward_dem_pct": -31.12
+    },
+    {
+      "county": "Harrison",
+      "earliest_margin_pct": -10.96,
+      "latest_margin_pct": -41.82,
+      "shift_toward_dem_pct": -30.86
+    },
+    {
+      "county": "Lewis",
+      "earliest_margin_pct": -32.02,
+      "latest_margin_pct": -60.36,
+      "shift_toward_dem_pct": -28.34
+    },
+    {
+      "county": "Doddridge",
+      "earliest_margin_pct": -47.01,
+      "latest_margin_pct": -74.34,
+      "shift_toward_dem_pct": -27.33
+    },
+    {
+      "county": "Ritchie",
+      "earliest_margin_pct": -47.57,
+      "latest_margin_pct": -74.09,
+      "shift_toward_dem_pct": -26.52
+    },
+    {
+      "county": "Jackson",
+      "earliest_margin_pct": -31.5,
+      "latest_margin_pct": -57.18,
+      "shift_toward_dem_pct": -25.68
+    },
+    {
+      "county": "Tyler",
+      "earliest_margin_pct": -47.16,
+      "latest_margin_pct": -68.74,
+      "shift_toward_dem_pct": -21.58
+    },
+    {
+      "county": "Wood",
+      "earliest_margin_pct": -22.59,
+      "latest_margin_pct": -43.77,
+      "shift_toward_dem_pct": -21.18
+    },
+    {
+      "county": "Preston",
+      "earliest_margin_pct": -40.54,
+      "latest_margin_pct": -58.2,
+      "shift_toward_dem_pct": -17.66
+    },
+    {
+      "county": "Jefferson",
+      "earliest_margin_pct": -0.4,
+      "latest_margin_pct": -16.14,
+      "shift_toward_dem_pct": -15.74
+    },
+    {
+      "county": "Berkeley",
+      "earliest_margin_pct": -23.25,
+      "latest_margin_pct": -36.46,
+      "shift_toward_dem_pct": -13.21
+    },
+    {
+      "county": "Upshur",
+      "earliest_margin_pct": -46.56,
+      "latest_margin_pct": -57.94,
+      "shift_toward_dem_pct": -11.38
+    },
+    {
+      "county": "Grant",
+      "earliest_margin_pct": -68.63,
+      "latest_margin_pct": -79.93,
+      "shift_toward_dem_pct": -11.3
+    },
+    {
+      "county": "Morgan",
+      "earliest_margin_pct": -45.48,
+      "latest_margin_pct": -56.52,
+      "shift_toward_dem_pct": -11.04
+    },
+    {
+      "county": "Kanawha",
+      "earliest_margin_pct": -7.63,
+      "latest_margin_pct": -17.83,
+      "shift_toward_dem_pct": -10.2
+    },
+    {
+      "county": "Ohio",
+      "earliest_margin_pct": -25.38,
+      "latest_margin_pct": -26.56,
+      "shift_toward_dem_pct": -1.18
+    },
+    {
+      "county": "Cabell",
+      "earliest_margin_pct": -22.15,
+      "latest_margin_pct": -22.35,
+      "shift_toward_dem_pct": -0.2
+    },
+    {
+      "county": "Randolph",
+      "earliest_margin_pct": -48.24,
+      "latest_margin_pct": -47.06,
+      "shift_toward_dem_pct": 1.18
+    },
+    {
+      "county": "Monongalia",
+      "earliest_margin_pct": -12.09,
+      "latest_margin_pct": -4.51,
+      "shift_toward_dem_pct": 7.58
+    }
+  ],
+  "top_shift_toward_democratic": [
+    {
+      "county": "Monongalia",
+      "earliest_margin_pct": -12.09,
+      "latest_margin_pct": -4.51,
+      "shift_toward_dem_pct": 7.58
+    },
+    {
+      "county": "Randolph",
+      "earliest_margin_pct": -48.24,
+      "latest_margin_pct": -47.06,
+      "shift_toward_dem_pct": 1.18
+    },
+    {
+      "county": "Cabell",
+      "earliest_margin_pct": -22.15,
+      "latest_margin_pct": -22.35,
+      "shift_toward_dem_pct": -0.2
+    },
+    {
+      "county": "Ohio",
+      "earliest_margin_pct": -25.38,
+      "latest_margin_pct": -26.56,
+      "shift_toward_dem_pct": -1.18
+    },
+    {
+      "county": "Kanawha",
+      "earliest_margin_pct": -7.63,
+      "latest_margin_pct": -17.83,
+      "shift_toward_dem_pct": -10.2
+    },
+    {
+      "county": "Morgan",
+      "earliest_margin_pct": -45.48,
+      "latest_margin_pct": -56.52,
+      "shift_toward_dem_pct": -11.04
+    },
+    {
+      "county": "Grant",
+      "earliest_margin_pct": -68.63,
+      "latest_margin_pct": -79.93,
+      "shift_toward_dem_pct": -11.3
+    },
+    {
+      "county": "Upshur",
+      "earliest_margin_pct": -46.56,
+      "latest_margin_pct": -57.94,
+      "shift_toward_dem_pct": -11.38
+    },
+    {
+      "county": "Berkeley",
+      "earliest_margin_pct": -23.25,
+      "latest_margin_pct": -36.46,
+      "shift_toward_dem_pct": -13.21
+    },
+    {
+      "county": "Jefferson",
+      "earliest_margin_pct": -0.4,
+      "latest_margin_pct": -16.14,
+      "shift_toward_dem_pct": -15.74
+    },
+    {
+      "county": "Preston",
+      "earliest_margin_pct": -40.54,
+      "latest_margin_pct": -58.2,
+      "shift_toward_dem_pct": -17.66
+    },
+    {
+      "county": "Wood",
+      "earliest_margin_pct": -22.59,
+      "latest_margin_pct": -43.77,
+      "shift_toward_dem_pct": -21.18
+    },
+    {
+      "county": "Tyler",
+      "earliest_margin_pct": -47.16,
+      "latest_margin_pct": -68.74,
+      "shift_toward_dem_pct": -21.58
+    },
+    {
+      "county": "Jackson",
+      "earliest_margin_pct": -31.5,
+      "latest_margin_pct": -57.18,
+      "shift_toward_dem_pct": -25.68
+    },
+    {
+      "county": "Ritchie",
+      "earliest_margin_pct": -47.57,
+      "latest_margin_pct": -74.09,
+      "shift_toward_dem_pct": -26.52
+    },
+    {
+      "county": "Doddridge",
+      "earliest_margin_pct": -47.01,
+      "latest_margin_pct": -74.34,
+      "shift_toward_dem_pct": -27.33
+    },
+    {
+      "county": "Lewis",
+      "earliest_margin_pct": -32.02,
+      "latest_margin_pct": -60.36,
+      "shift_toward_dem_pct": -28.34
+    },
+    {
+      "county": "Harrison",
+      "earliest_margin_pct": -10.96,
+      "latest_margin_pct": -41.82,
+      "shift_toward_dem_pct": -30.86
+    },
+    {
+      "county": "Taylor",
+      "earliest_margin_pct": -21.27,
+      "latest_margin_pct": -52.39,
+      "shift_toward_dem_pct": -31.12
+    },
+    {
+      "county": "Marion",
+      "earliest_margin_pct": 0.25,
+      "latest_margin_pct": -31.98,
+      "shift_toward_dem_pct": -32.23
+    },
+    {
+      "county": "Mineral",
+      "earliest_margin_pct": -28.24,
+      "latest_margin_pct": -60.99,
+      "shift_toward_dem_pct": -32.75
+    },
+    {
+      "county": "Mason",
+      "earliest_margin_pct": -25.18,
+      "latest_margin_pct": -59.18,
+      "shift_toward_dem_pct": -34.0
+    },
+    {
+      "county": "Roane",
+      "earliest_margin_pct": -19.71,
+      "latest_margin_pct": -54.95,
+      "shift_toward_dem_pct": -35.24
+    },
+    {
+      "county": "Marshall",
+      "earliest_margin_pct": -15.61,
+      "latest_margin_pct": -50.96,
+      "shift_toward_dem_pct": -35.35
+    },
+    {
+      "county": "Greenbrier",
+      "earliest_margin_pct": -5.98,
+      "latest_margin_pct": -42.96,
+      "shift_toward_dem_pct": -36.98
+    },
+    {
+      "county": "Putnam",
+      "earliest_margin_pct": -7.81,
+      "latest_margin_pct": -47.21,
+      "shift_toward_dem_pct": -39.4
+    },
+    {
+      "county": "Wetzel",
+      "earliest_margin_pct": -13.76,
+      "latest_margin_pct": -56.95,
+      "shift_toward_dem_pct": -43.19
+    },
+    {
+      "county": "Pocahontas",
+      "earliest_margin_pct": -7.39,
+      "latest_margin_pct": -51.42,
+      "shift_toward_dem_pct": -44.03
+    },
+    {
+      "county": "Pleasants",
+      "earliest_margin_pct": -15.11,
+      "latest_margin_pct": -60.1,
+      "shift_toward_dem_pct": -44.99
+    },
+    {
+      "county": "Tucker",
+      "earliest_margin_pct": -4.42,
+      "latest_margin_pct": -49.99,
+      "shift_toward_dem_pct": -45.57
+    },
+    {
+      "county": "Wayne",
+      "earliest_margin_pct": -4.81,
+      "latest_margin_pct": -54.33,
+      "shift_toward_dem_pct": -49.52
+    },
+    {
+      "county": "Monroe",
+      "earliest_margin_pct": -12.01,
+      "latest_margin_pct": -63.0,
+      "shift_toward_dem_pct": -50.99
+    },
+    {
+      "county": "Hancock",
+      "earliest_margin_pct": 4.24,
+      "latest_margin_pct": -47.59,
+      "shift_toward_dem_pct": -51.83
+    },
+    {
+      "county": "Barbour",
+      "earliest_margin_pct": -9.23,
+      "latest_margin_pct": -61.75,
+      "shift_toward_dem_pct": -52.52
+    },
+    {
+      "county": "Mercer",
+      "earliest_margin_pct": -5.06,
+      "latest_margin_pct": -58.22,
+      "shift_toward_dem_pct": -53.16
+    },
+    {
+      "county": "Brooke",
+      "earliest_margin_pct": 8.67,
+      "latest_margin_pct": -45.44,
+      "shift_toward_dem_pct": -54.11
+    },
+    {
+      "county": "Summers",
+      "earliest_margin_pct": 2.02,
+      "latest_margin_pct": -52.45,
+      "shift_toward_dem_pct": -54.47
+    },
+    {
+      "county": "Hampshire",
+      "earliest_margin_pct": -6.36,
+      "latest_margin_pct": -63.49,
+      "shift_toward_dem_pct": -57.13
+    },
+    {
+      "county": "Nicholas",
+      "earliest_margin_pct": -3.78,
+      "latest_margin_pct": -61.15,
+      "shift_toward_dem_pct": -57.37
+    },
+    {
+      "county": "Wirt",
+      "earliest_margin_pct": -9.89,
+      "latest_margin_pct": -67.66,
+      "shift_toward_dem_pct": -57.77
+    },
+    {
+      "county": "Braxton",
+      "earliest_margin_pct": 6.42,
+      "latest_margin_pct": -52.79,
+      "shift_toward_dem_pct": -59.21
+    },
+    {
+      "county": "Clay",
+      "earliest_margin_pct": -3.52,
+      "latest_margin_pct": -63.49,
+      "shift_toward_dem_pct": -59.97
+    },
+    {
+      "county": "Hardy",
+      "earliest_margin_pct": 1.28,
+      "latest_margin_pct": -58.79,
+      "shift_toward_dem_pct": -60.07
+    },
+    {
+      "county": "Pendleton",
+      "earliest_margin_pct": 1.01,
+      "latest_margin_pct": -59.61,
+      "shift_toward_dem_pct": -60.62
+    },
+    {
+      "county": "Calhoun",
+      "earliest_margin_pct": -4.13,
+      "latest_margin_pct": -66.1,
+      "shift_toward_dem_pct": -61.97
+    },
+    {
+      "county": "Lincoln",
+      "earliest_margin_pct": 0.18,
+      "latest_margin_pct": -63.71,
+      "shift_toward_dem_pct": -63.89
+    },
+    {
+      "county": "Gilmer",
+      "earliest_margin_pct": 6.39,
+      "latest_margin_pct": -57.89,
+      "shift_toward_dem_pct": -64.28
+    },
+    {
+      "county": "Fayette",
+      "earliest_margin_pct": 22.89,
+      "latest_margin_pct": -42.64,
+      "shift_toward_dem_pct": -65.53
+    },
+    {
+      "county": "Wyoming",
+      "earliest_margin_pct": 0.52,
+      "latest_margin_pct": -73.81,
+      "shift_toward_dem_pct": -74.33
+    },
+    {
+      "county": "Boone",
+      "earliest_margin_pct": 15.66,
+      "latest_margin_pct": -58.74,
+      "shift_toward_dem_pct": -74.4
+    },
+    {
+      "county": "Webster",
+      "earliest_margin_pct": 11.12,
+      "latest_margin_pct": -67.6,
+      "shift_toward_dem_pct": -78.72
+    },
+    {
+      "county": "McDowell",
+      "earliest_margin_pct": 20.45,
+      "latest_margin_pct": -61.24,
+      "shift_toward_dem_pct": -81.69
+    },
+    {
+      "county": "Logan",
+      "earliest_margin_pct": 16.57,
+      "latest_margin_pct": -67.43,
+      "shift_toward_dem_pct": -84.0
+    },
+    {
+      "county": "Mingo",
+      "earliest_margin_pct": 11.7,
+      "latest_margin_pct": -74.7,
+      "shift_toward_dem_pct": -86.4
+    },
+    {
+      "county": "Raleigh",
+      "earliest_margin_pct": 49.82,
+      "latest_margin_pct": -55.25,
+      "shift_toward_dem_pct": -105.07
+    }
+  ],
+  "recent_year": 2024,
+  "recent_year_contest_snapshot": [
+    {
+      "contest_type": "attorney_general",
+      "dem_votes": 214654,
+      "rep_votes": 501452,
+      "other_votes": 0,
+      "total_votes": 716106,
+      "two_party_total": 716106,
+      "margin": -286798,
+      "margin_pct": -40.05,
+      "winner": "REP"
+    },
+    {
+      "contest_type": "auditor",
+      "dem_votes": 222491,
+      "rep_votes": 488737,
+      "other_votes": 0,
+      "total_votes": 711228,
+      "two_party_total": 711228,
+      "margin": -266246,
+      "margin_pct": -37.43,
+      "winner": "REP"
+    },
+    {
+      "contest_type": "commissioner_of_agriculture",
+      "dem_votes": 219131,
+      "rep_votes": 490964,
+      "other_votes": 0,
+      "total_votes": 710095,
+      "two_party_total": 710095,
+      "margin": -271833,
+      "margin_pct": -38.28,
+      "winner": "REP"
+    },
+    {
+      "contest_type": "governor",
+      "dem_votes": 233976,
+      "rep_votes": 459300,
+      "other_votes": 47652,
+      "total_votes": 740928,
+      "two_party_total": 693276,
+      "margin": -225324,
+      "margin_pct": -32.5,
+      "winner": "REP"
+    },
+    {
+      "contest_type": "president",
+      "dem_votes": 214309,
+      "rep_votes": 533556,
+      "other_votes": 14525,
+      "total_votes": 762390,
+      "two_party_total": 747865,
+      "margin": -319247,
+      "margin_pct": -42.69,
+      "winner": "REP"
+    },
+    {
+      "contest_type": "secretary_of_state",
+      "dem_votes": 207238,
+      "rep_votes": 510992,
+      "other_votes": 0,
+      "total_votes": 718230,
+      "two_party_total": 718230,
+      "margin": -303754,
+      "margin_pct": -42.29,
+      "winner": "REP"
+    },
+    {
+      "contest_type": "state_treasurer",
+      "dem_votes": 0,
+      "rep_votes": 602718,
+      "other_votes": 0,
+      "total_votes": 602718,
+      "two_party_total": 602718,
+      "margin": -602718,
+      "margin_pct": -100.0,
+      "winner": "REP"
+    },
+    {
+      "contest_type": "us_senate",
+      "dem_votes": 207548,
+      "rep_votes": 514079,
+      "other_votes": 26075,
+      "total_votes": 747702,
+      "two_party_total": 721627,
+      "margin": -306531,
+      "margin_pct": -42.48,
+      "winner": "REP"
+    }
+  ],
+  "most_volatile_counties": [
+    {
+      "county": "Mingo",
+      "n_elections": 8,
+      "margin_stddev": 44.18,
+      "avg_margin_pct": -18.21
+    },
+    {
+      "county": "McDowell",
+      "n_elections": 8,
+      "margin_stddev": 42.82,
+      "avg_margin_pct": -3.97
+    },
+    {
+      "county": "Logan",
+      "n_elections": 8,
+      "margin_stddev": 40.61,
+      "avg_margin_pct": -15.77
+    },
+    {
+      "county": "Wyoming",
+      "n_elections": 8,
+      "margin_stddev": 37.76,
+      "avg_margin_pct": -28.01
+    },
+    {
+      "county": "Boone",
+      "n_elections": 8,
+      "margin_stddev": 37.67,
+      "avg_margin_pct": -8.56
+    },
+    {
+      "county": "Raleigh",
+      "n_elections": 8,
+      "margin_stddev": 36.35,
+      "avg_margin_pct": -17.62
+    },
+    {
+      "county": "Webster",
+      "n_elections": 9,
+      "margin_stddev": 36.29,
+      "avg_margin_pct": -17.59
+    },
+    {
+      "county": "Lincoln",
+      "n_elections": 7,
+      "margin_stddev": 30.71,
+      "avg_margin_pct": -23.52
+    },
+    {
+      "county": "Fayette",
+      "n_elections": 8,
+      "margin_stddev": 30.54,
+      "avg_margin_pct": -4.67
+    },
+    {
+      "county": "Nicholas",
+      "n_elections": 8,
+      "margin_stddev": 28.99,
+      "avg_margin_pct": -22.91
+    },
+    {
+      "county": "Calhoun",
+      "n_elections": 8,
+      "margin_stddev": 27.08,
+      "avg_margin_pct": -29.21
+    },
+    {
+      "county": "Clay",
+      "n_elections": 9,
+      "margin_stddev": 26.87,
+      "avg_margin_pct": -27.02
+    },
+    {
+      "county": "Braxton",
+      "n_elections": 8,
+      "margin_stddev": 26.83,
+      "avg_margin_pct": -14.7
+    },
+    {
+      "county": "Mercer",
+      "n_elections": 8,
+      "margin_stddev": 26.68,
+      "avg_margin_pct": -26.64
+    },
+    {
+      "county": "Summers",
+      "n_elections": 8,
+      "margin_stddev": 25.62,
+      "avg_margin_pct": -18.36
+    },
+    {
+      "county": "Gilmer",
+      "n_elections": 9,
+      "margin_stddev": 25.41,
+      "avg_margin_pct": -26.56
+    },
+    {
+      "county": "Brooke",
+      "n_elections": 8,
+      "margin_stddev": 24.55,
+      "avg_margin_pct": -14.62
+    },
+    {
+      "county": "Hampshire",
+      "n_elections": 8,
+      "margin_stddev": 24.45,
+      "avg_margin_pct": -35.34
+    },
+    {
+      "county": "Wayne",
+      "n_elections": 8,
+      "margin_stddev": 23.92,
+      "avg_margin_pct": -23.74
+    },
+    {
+      "county": "Hancock",
+      "n_elections": 8,
+      "margin_stddev": 23.87,
+      "avg_margin_pct": -17.96
+    },
+    {
+      "county": "Hardy",
+      "n_elections": 9,
+      "margin_stddev": 23.35,
+      "avg_margin_pct": -32.84
+    },
+    {
+      "county": "Pendleton",
+      "n_elections": 8,
+      "margin_stddev": 23.04,
+      "avg_margin_pct": -28.95
+    },
+    {
+      "county": "Monroe",
+      "n_elections": 8,
+      "margin_stddev": 22.36,
+      "avg_margin_pct": -32.57
+    },
+    {
+      "county": "Wetzel",
+      "n_elections": 9,
+      "margin_stddev": 22.23,
+      "avg_margin_pct": -24.26
+    },
+    {
+      "county": "Wirt",
+      "n_elections": 8,
+      "margin_stddev": 22.2,
+      "avg_margin_pct": -39.2
+    },
+    {
+      "county": "Randolph",
+      "n_elections": 8,
+      "margin_stddev": 22.12,
+      "avg_margin_pct": -26.71
+    },
+    {
+      "county": "Barbour",
+      "n_elections": 8,
+      "margin_stddev": 22.1,
+      "avg_margin_pct": -32.47
+    },
+    {
+      "county": "Mason",
+      "n_elections": 8,
+      "margin_stddev": 20.9,
+      "avg_margin_pct": -30.63
+    },
+    {
+      "county": "Tucker",
+      "n_elections": 9,
+      "margin_stddev": 20.21,
+      "avg_margin_pct": -29.11
+    },
+    {
+      "county": "Pleasants",
+      "n_elections": 9,
+      "margin_stddev": 19.9,
+      "avg_margin_pct": -33.1
+    },
+    {
+      "county": "Marshall",
+      "n_elections": 9,
+      "margin_stddev": 19.5,
+      "avg_margin_pct": -26.27
+    },
+    {
+      "county": "Greenbrier",
+      "n_elections": 8,
+      "margin_stddev": 18.91,
+      "avg_margin_pct": -19.81
+    },
+    {
+      "county": "Pocahontas",
+      "n_elections": 9,
+      "margin_stddev": 18.74,
+      "avg_margin_pct": -24.24
+    },
+    {
+      "county": "Marion",
+      "n_elections": 9,
+      "margin_stddev": 17.64,
+      "avg_margin_pct": -10.09
+    },
+    {
+      "county": "Jackson",
+      "n_elections": 8,
+      "margin_stddev": 17.33,
+      "avg_margin_pct": -33.09
+    },
+    {
+      "county": "Roane",
+      "n_elections": 9,
+      "margin_stddev": 17.31,
+      "avg_margin_pct": -28.12
+    },
+    {
+      "county": "Harrison",
+      "n_elections": 9,
+      "margin_stddev": 16.91,
+      "avg_margin_pct": -20.12
+    },
+    {
+      "county": "Taylor",
+      "n_elections": 9,
+      "margin_stddev": 16.91,
+      "avg_margin_pct": -29.84
+    },
+    {
+      "county": "Lewis",
+      "n_elections": 8,
+      "margin_stddev": 16.56,
+      "avg_margin_pct": -39.22
+    },
+    {
+      "county": "Putnam",
+      "n_elections": 8,
+      "margin_stddev": 15.88,
+      "avg_margin_pct": -28.51
+    },
+    {
+      "county": "Mineral",
+      "n_elections": 8,
+      "margin_stddev": 15.47,
+      "avg_margin_pct": -43.45
+    },
+    {
+      "county": "Tyler",
+      "n_elections": 9,
+      "margin_stddev": 14.98,
+      "avg_margin_pct": -49.07
+    },
+    {
+      "county": "Doddridge",
+      "n_elections": 8,
+      "margin_stddev": 13.48,
+      "avg_margin_pct": -57.25
+    },
+    {
+      "county": "Preston",
+      "n_elections": 9,
+      "margin_stddev": 13.14,
+      "avg_margin_pct": -42.23
+    },
+    {
+      "county": "Ritchie",
+      "n_elections": 8,
+      "margin_stddev": 12.9,
+      "avg_margin_pct": -57.94
+    },
+    {
+      "county": "Ohio",
+      "n_elections": 9,
+      "margin_stddev": 11.92,
+      "avg_margin_pct": -16.43
+    },
+    {
+      "county": "Upshur",
+      "n_elections": 8,
+      "margin_stddev": 11.49,
+      "avg_margin_pct": -43.97
+    },
+    {
+      "county": "Jefferson",
+      "n_elections": 8,
+      "margin_stddev": 11.21,
+      "avg_margin_pct": -3.29
+    },
+    {
+      "county": "Morgan",
+      "n_elections": 7,
+      "margin_stddev": 10.84,
+      "avg_margin_pct": -44.17
+    },
+    {
+      "county": "Wood",
+      "n_elections": 9,
+      "margin_stddev": 10.45,
+      "avg_margin_pct": -32.73
+    },
+    {
+      "county": "Berkeley",
+      "n_elections": 8,
+      "margin_stddev": 10.01,
+      "avg_margin_pct": -25.2
+    },
+    {
+      "county": "Grant",
+      "n_elections": 9,
+      "margin_stddev": 9.45,
+      "avg_margin_pct": -67.24
+    },
+    {
+      "county": "Kanawha",
+      "n_elections": 9,
+      "margin_stddev": 7.93,
+      "avg_margin_pct": -8.4
+    },
+    {
+      "county": "Cabell",
+      "n_elections": 8,
+      "margin_stddev": 6.67,
+      "avg_margin_pct": -16.57
+    },
+    {
+      "county": "Monongalia",
+      "n_elections": 9,
+      "margin_stddev": 5.41,
+      "avg_margin_pct": -3.39
+    }
+  ],
+  "detailed_description": {
+    "overview_paragraphs": [
+      "This WV-focused dataset covers 1950 through 2024 with county-level returns harmonized across multiple historical source formats.",
+      "Margins are calculated as Democratic minus Republican two-party margin percentage; positive values indicate a Democratic edge and negative values indicate a Republican edge.",
+      "Contest narratives below describe first-to-latest statewide movement and identify the counties with the largest absolute margins in the most recent available year."
+    ],
+    "contest_narratives": [
+      {
+        "contest_type": "attorney_general",
+        "years_covered": [
+          1950,
+          1952,
+          1956,
+          1960,
+          2000,
+          2004,
+          2008,
+          2012,
+          2016,
+          2020,
+          2024
+        ],
+        "first_year": 1950,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 359734,
+          "rep_votes": 277079,
+          "other_votes": 0,
+          "total_votes": 636813,
+          "two_party_total": 636813,
+          "margin": 82655,
+          "margin_pct": 12.98,
+          "winner": "DEM"
+        },
+        "last_statewide": {
+          "dem_votes": 214654,
+          "rep_votes": 501452,
+          "other_votes": 0,
+          "total_votes": 716106,
+          "two_party_total": 716106,
+          "margin": -286798,
+          "margin_pct": -40.05,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": -53.03,
+        "strongest_counties_latest": [
+          {
+            "county": "Grant",
+            "winner": "REP",
+            "margin_pct": -77.52
+          },
+          {
+            "county": "Doddridge",
+            "winner": "REP",
+            "margin_pct": -71.93
+          },
+          {
+            "county": "Ritchie",
+            "winner": "REP",
+            "margin_pct": -68.79
+          },
+          {
+            "county": "Mingo",
+            "winner": "REP",
+            "margin_pct": -68.78
+          },
+          {
+            "county": "Wyoming",
+            "winner": "REP",
+            "margin_pct": -66.65
+          }
+        ],
+        "description": "In attorney_general, statewide two-party margin moved from D12.98 in 1950 to R40.05 in 2024, a 53.03-point shift toward Republicans."
+      },
+      {
+        "contest_type": "auditor",
+        "years_covered": [
+          1952,
+          1956,
+          1960,
+          2000,
+          2004,
+          2008,
+          2012,
+          2016,
+          2020,
+          2024
+        ],
+        "first_year": 1952,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 275040,
+          "rep_votes": 863680,
+          "other_votes": 0,
+          "total_votes": 1138720,
+          "two_party_total": 1138720,
+          "margin": -588640,
+          "margin_pct": -51.69,
+          "winner": "REP"
+        },
+        "last_statewide": {
+          "dem_votes": 222491,
+          "rep_votes": 488737,
+          "other_votes": 0,
+          "total_votes": 711228,
+          "two_party_total": 711228,
+          "margin": -266246,
+          "margin_pct": -37.43,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": 14.26,
+        "strongest_counties_latest": [
+          {
+            "county": "Grant",
+            "winner": "REP",
+            "margin_pct": -75.67
+          },
+          {
+            "county": "Doddridge",
+            "winner": "REP",
+            "margin_pct": -67.73
+          },
+          {
+            "county": "Ritchie",
+            "winner": "REP",
+            "margin_pct": -66.53
+          },
+          {
+            "county": "Mingo",
+            "winner": "REP",
+            "margin_pct": -65.33
+          },
+          {
+            "county": "Wyoming",
+            "winner": "REP",
+            "margin_pct": -62.95
+          }
+        ],
+        "description": "In auditor, statewide two-party margin moved from R51.69 in 1952 to R37.43 in 2024, a 14.26-point shift toward Democrats."
+      },
+      {
+        "contest_type": "commissioner_of_agriculture",
+        "years_covered": [
+          1952,
+          1956,
+          1960,
+          2000,
+          2004,
+          2008,
+          2012,
+          2016,
+          2020,
+          2024
+        ],
+        "first_year": 1952,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 469688,
+          "rep_votes": 390453,
+          "other_votes": 0,
+          "total_votes": 860141,
+          "two_party_total": 860141,
+          "margin": 79235,
+          "margin_pct": 9.21,
+          "winner": "DEM"
+        },
+        "last_statewide": {
+          "dem_votes": 219131,
+          "rep_votes": 490964,
+          "other_votes": 0,
+          "total_votes": 710095,
+          "two_party_total": 710095,
+          "margin": -271833,
+          "margin_pct": -38.28,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": -47.49,
+        "strongest_counties_latest": [
+          {
+            "county": "Doddridge",
+            "winner": "REP",
+            "margin_pct": -71.04
+          },
+          {
+            "county": "Grant",
+            "winner": "REP",
+            "margin_pct": -70.26
+          },
+          {
+            "county": "Ritchie",
+            "winner": "REP",
+            "margin_pct": -70.0
+          },
+          {
+            "county": "Tyler",
+            "winner": "REP",
+            "margin_pct": -65.9
+          },
+          {
+            "county": "Monroe",
+            "winner": "REP",
+            "margin_pct": -60.64
+          }
+        ],
+        "description": "In commissioner_of_agriculture, statewide two-party margin moved from D9.21 in 1952 to R38.28 in 2024, a 47.49-point shift toward Republicans."
+      },
+      {
+        "contest_type": "governor",
+        "years_covered": [
+          1952,
+          1956,
+          1960,
+          2000,
+          2004,
+          2008,
+          2012,
+          2016,
+          2020,
+          2024
+        ],
+        "first_year": 1952,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 454898,
+          "rep_votes": 427629,
+          "other_votes": 0,
+          "total_votes": 882527,
+          "two_party_total": 882527,
+          "margin": 27269,
+          "margin_pct": 3.09,
+          "winner": "DEM"
+        },
+        "last_statewide": {
+          "dem_votes": 233976,
+          "rep_votes": 459300,
+          "other_votes": 47652,
+          "total_votes": 740928,
+          "two_party_total": 693276,
+          "margin": -225324,
+          "margin_pct": -32.5,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": -35.59,
+        "strongest_counties_latest": [
+          {
+            "county": "Grant",
+            "winner": "REP",
+            "margin_pct": -77.22
+          },
+          {
+            "county": "Ritchie",
+            "winner": "REP",
+            "margin_pct": -64.73
+          },
+          {
+            "county": "Hampshire",
+            "winner": "REP",
+            "margin_pct": -62.43
+          },
+          {
+            "county": "Doddridge",
+            "winner": "REP",
+            "margin_pct": -62.41
+          },
+          {
+            "county": "Mineral",
+            "winner": "REP",
+            "margin_pct": -61.81
+          }
+        ],
+        "description": "In governor, statewide two-party margin moved from D3.09 in 1952 to R32.50 in 2024, a 35.59-point shift toward Republicans."
+      },
+      {
+        "contest_type": "president",
+        "years_covered": [
+          1956,
+          1960,
+          2000,
+          2004,
+          2008,
+          2012,
+          2016,
+          2020,
+          2024
+        ],
+        "first_year": 1956,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 381533,
+          "rep_votes": 449297,
+          "other_votes": 0,
+          "total_votes": 830830,
+          "two_party_total": 830830,
+          "margin": -67764,
+          "margin_pct": -8.16,
+          "winner": "REP"
+        },
+        "last_statewide": {
+          "dem_votes": 214309,
+          "rep_votes": 533556,
+          "other_votes": 14525,
+          "total_votes": 762390,
+          "two_party_total": 747865,
+          "margin": -319247,
+          "margin_pct": -42.69,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": -34.53,
+        "strongest_counties_latest": [
+          {
+            "county": "Grant",
+            "winner": "REP",
+            "margin_pct": -79.93
+          },
+          {
+            "county": "Mingo",
+            "winner": "REP",
+            "margin_pct": -74.7
+          },
+          {
+            "county": "Doddridge",
+            "winner": "REP",
+            "margin_pct": -74.34
+          },
+          {
+            "county": "Ritchie",
+            "winner": "REP",
+            "margin_pct": -74.09
+          },
+          {
+            "county": "Wyoming",
+            "winner": "REP",
+            "margin_pct": -73.81
+          }
+        ],
+        "description": "In president, statewide two-party margin moved from R8.16 in 1956 to R42.69 in 2024, a 34.53-point shift toward Republicans."
+      },
+      {
+        "contest_type": "secretary_of_state",
+        "years_covered": [
+          1952,
+          1956,
+          1958,
+          1960,
+          2000,
+          2004,
+          2008,
+          2012,
+          2016,
+          2020,
+          2024
+        ],
+        "first_year": 1952,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 462172,
+          "rep_votes": 398515,
+          "other_votes": 0,
+          "total_votes": 860687,
+          "two_party_total": 860687,
+          "margin": 63657,
+          "margin_pct": 7.4,
+          "winner": "DEM"
+        },
+        "last_statewide": {
+          "dem_votes": 207238,
+          "rep_votes": 510992,
+          "other_votes": 0,
+          "total_votes": 718230,
+          "two_party_total": 718230,
+          "margin": -303754,
+          "margin_pct": -42.29,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": -49.69,
+        "strongest_counties_latest": [
+          {
+            "county": "Grant",
+            "winner": "REP",
+            "margin_pct": -78.81
+          },
+          {
+            "county": "Doddridge",
+            "winner": "REP",
+            "margin_pct": -73.79
+          },
+          {
+            "county": "Ritchie",
+            "winner": "REP",
+            "margin_pct": -72.0
+          },
+          {
+            "county": "Tyler",
+            "winner": "REP",
+            "margin_pct": -66.93
+          },
+          {
+            "county": "Wyoming",
+            "winner": "REP",
+            "margin_pct": -66.82
+          }
+        ],
+        "description": "In secretary_of_state, statewide two-party margin moved from D7.40 in 1952 to R42.29 in 2024, a 49.69-point shift toward Republicans."
+      },
+      {
+        "contest_type": "state_treasurer",
+        "years_covered": [
+          1950,
+          1952,
+          1956,
+          1960,
+          2000,
+          2004,
+          2008,
+          2012,
+          2016,
+          2020,
+          2024
+        ],
+        "first_year": 1950,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 364778,
+          "rep_votes": 272588,
+          "other_votes": 0,
+          "total_votes": 637366,
+          "two_party_total": 637366,
+          "margin": 92190,
+          "margin_pct": 14.46,
+          "winner": "DEM"
+        },
+        "last_statewide": {
+          "dem_votes": 0,
+          "rep_votes": 602718,
+          "other_votes": 0,
+          "total_votes": 602718,
+          "two_party_total": 602718,
+          "margin": -602718,
+          "margin_pct": -100.0,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": -114.46,
+        "strongest_counties_latest": [
+          {
+            "county": "Barbour",
+            "winner": "REP",
+            "margin_pct": -100.0
+          },
+          {
+            "county": "Berkeley",
+            "winner": "REP",
+            "margin_pct": -100.0
+          },
+          {
+            "county": "Boone",
+            "winner": "REP",
+            "margin_pct": -100.0
+          },
+          {
+            "county": "Braxton",
+            "winner": "REP",
+            "margin_pct": -100.0
+          },
+          {
+            "county": "Brooke",
+            "winner": "REP",
+            "margin_pct": -100.0
+          }
+        ],
+        "description": "In state_treasurer, statewide two-party margin moved from D14.46 in 1950 to R100.00 in 2024, a 114.46-point shift toward Republicans."
+      },
+      {
+        "contest_type": "us_senate",
+        "years_covered": [
+          1952,
+          1954,
+          1956,
+          1958,
+          1960,
+          2000,
+          2002,
+          2006,
+          2008,
+          2010,
+          2012,
+          2018,
+          2020,
+          2024
+        ],
+        "first_year": 1952,
+        "last_year": 2024,
+        "first_statewide": {
+          "dem_votes": 470019,
+          "rep_votes": 406554,
+          "other_votes": 0,
+          "total_votes": 876573,
+          "two_party_total": 876573,
+          "margin": 63465,
+          "margin_pct": 7.24,
+          "winner": "DEM"
+        },
+        "last_statewide": {
+          "dem_votes": 207548,
+          "rep_votes": 514079,
+          "other_votes": 26075,
+          "total_votes": 747702,
+          "two_party_total": 721627,
+          "margin": -306531,
+          "margin_pct": -42.48,
+          "winner": "REP"
+        },
+        "shift_toward_dem_pct": -49.72,
+        "strongest_counties_latest": [
+          {
+            "county": "Grant",
+            "winner": "REP",
+            "margin_pct": -78.94
+          },
+          {
+            "county": "Wyoming",
+            "winner": "REP",
+            "margin_pct": -73.31
+          },
+          {
+            "county": "Mingo",
+            "winner": "REP",
+            "margin_pct": -72.96
+          },
+          {
+            "county": "Doddridge",
+            "winner": "REP",
+            "margin_pct": -72.47
+          },
+          {
+            "county": "Ritchie",
+            "winner": "REP",
+            "margin_pct": -71.4
+          }
+        ],
+        "description": "In us_senate, statewide two-party margin moved from D7.24 in 1952 to R42.48 in 2024, a 49.72-point shift toward Republicans."
+      }
+    ],
+    "year_summaries": [
+      {
+        "year": 1950,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "DEM",
+            "margin_pct": 12.98
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 14.46
+          }
+        ],
+        "summary": "state_treasurer DEM D14.46; attorney_general DEM D12.98"
+      },
+      {
+        "year": 1952,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "DEM",
+            "margin_pct": 6.93
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "REP",
+            "margin_pct": -51.69
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "DEM",
+            "margin_pct": 9.21
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 3.09
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "DEM",
+            "margin_pct": 7.4
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 8.41
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 7.24
+          }
+        ],
+        "summary": "auditor REP R51.69; commissioner_of_agriculture DEM D9.21; state_treasurer DEM D8.41; secretary_of_state DEM D7.40"
+      },
+      {
+        "year": 1954,
+        "contest_results": [
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 9.59
+          }
+        ],
+        "summary": "us_senate DEM D9.59"
+      },
+      {
+        "year": 1956,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "DEM",
+            "margin_pct": 2.77
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "DEM",
+            "margin_pct": 2.34
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "DEM",
+            "margin_pct": 2.52
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 3.99
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -8.16
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "DEM",
+            "margin_pct": 1.76
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 2.89
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "REP",
+            "margin_pct": -7.34
+          }
+        ],
+        "summary": "president REP R8.16; us_senate REP R7.34; governor DEM D3.99; state_treasurer DEM D2.89"
+      },
+      {
+        "year": 1958,
+        "contest_results": [
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "DEM",
+            "margin_pct": 12.84
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 18.52
+          }
+        ],
+        "summary": "us_senate DEM D18.52; secretary_of_state DEM D12.84"
+      },
+      {
+        "year": 1960,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "DEM",
+            "margin_pct": 16.13
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "DEM",
+            "margin_pct": 15.48
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "DEM",
+            "margin_pct": 17.77
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 7.99
+          },
+          {
+            "contest_type": "president",
+            "winner": "DEM",
+            "margin_pct": 5.47
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "DEM",
+            "margin_pct": 16.95
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 14.7
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 10.68
+          }
+        ],
+        "summary": "commissioner_of_agriculture DEM D17.77; secretary_of_state DEM D16.95; attorney_general DEM D16.13; auditor DEM D15.48"
+      },
+      {
+        "year": 2000,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "DEM",
+            "margin_pct": 100.0
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "DEM",
+            "margin_pct": 100.0
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "DEM",
+            "margin_pct": 100.0
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 3.0
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -6.48
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "DEM",
+            "margin_pct": 100.0
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 100.0
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 58.83
+          }
+        ],
+        "summary": "attorney_general DEM D100.00; auditor DEM D100.00; commissioner_of_agriculture DEM D100.00; secretary_of_state DEM D100.00"
+      },
+      {
+        "year": 2002,
+        "contest_results": [
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 26.62
+          }
+        ],
+        "summary": "us_senate DEM D26.62"
+      },
+      {
+        "year": 2004,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "DEM",
+            "margin_pct": 0.63
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "DEM",
+            "margin_pct": 22.55
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "DEM",
+            "margin_pct": 26.01
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 29.74
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -12.77
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "REP",
+            "margin_pct": -3.8
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 24.74
+          }
+        ],
+        "summary": "governor DEM D29.74; commissioner_of_agriculture DEM D26.01; state_treasurer DEM D24.74; auditor DEM D22.55"
+      },
+      {
+        "year": 2006,
+        "contest_results": [
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 31.29
+          }
+        ],
+        "summary": "us_senate DEM D31.29"
+      },
+      {
+        "year": 2008,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "DEM",
+            "margin_pct": 1.04
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "DEM",
+            "margin_pct": 100.0
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "DEM",
+            "margin_pct": 7.01
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 47.75
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -14.67
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "DEM",
+            "margin_pct": 32.35
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 100.0
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 27.62
+          }
+        ],
+        "summary": "auditor DEM D100.00; state_treasurer DEM D100.00; governor DEM D47.75; secretary_of_state DEM D32.35"
+      },
+      {
+        "year": 2010,
+        "contest_results": [
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 10.04
+          }
+        ],
+        "summary": "us_senate DEM D10.04"
+      },
+      {
+        "year": 2012,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "REP",
+            "margin_pct": -2.75
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "DEM",
+            "margin_pct": 22.24
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "DEM",
+            "margin_pct": 1.77
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 5.54
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -23.73
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "DEM",
+            "margin_pct": 29.67
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 12.23
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 23.05
+          }
+        ],
+        "summary": "secretary_of_state DEM D29.67; president REP R23.73; us_senate DEM D23.05; auditor DEM D22.24"
+      },
+      {
+        "year": 2016,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "REP",
+            "margin_pct": -10.34
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "REP",
+            "margin_pct": -25.71
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "REP",
+            "margin_pct": -7.95
+          },
+          {
+            "contest_type": "governor",
+            "winner": "DEM",
+            "margin_pct": 7.42
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -44.32
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "REP",
+            "margin_pct": -1.79
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "DEM",
+            "margin_pct": 7.02
+          }
+        ],
+        "summary": "president REP R44.32; auditor REP R25.71; attorney_general REP R10.34; commissioner_of_agriculture REP R7.95"
+      },
+      {
+        "year": 2018,
+        "contest_results": [
+          {
+            "contest_type": "us_senate",
+            "winner": "DEM",
+            "margin_pct": 3.45
+          }
+        ],
+        "summary": "us_senate DEM D3.45"
+      },
+      {
+        "year": 2020,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "REP",
+            "margin_pct": -27.54
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "REP",
+            "margin_pct": -34.05
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "REP",
+            "margin_pct": -29.96
+          },
+          {
+            "contest_type": "governor",
+            "winner": "REP",
+            "margin_pct": -35.5
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -39.6
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "REP",
+            "margin_pct": -16.52
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "REP",
+            "margin_pct": -12.62
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "REP",
+            "margin_pct": -44.49
+          }
+        ],
+        "summary": "us_senate REP R44.49; president REP R39.60; governor REP R35.50; auditor REP R34.05"
+      },
+      {
+        "year": 2024,
+        "contest_results": [
+          {
+            "contest_type": "attorney_general",
+            "winner": "REP",
+            "margin_pct": -40.05
+          },
+          {
+            "contest_type": "auditor",
+            "winner": "REP",
+            "margin_pct": -37.43
+          },
+          {
+            "contest_type": "commissioner_of_agriculture",
+            "winner": "REP",
+            "margin_pct": -38.28
+          },
+          {
+            "contest_type": "governor",
+            "winner": "REP",
+            "margin_pct": -32.5
+          },
+          {
+            "contest_type": "president",
+            "winner": "REP",
+            "margin_pct": -42.69
+          },
+          {
+            "contest_type": "secretary_of_state",
+            "winner": "REP",
+            "margin_pct": -42.29
+          },
+          {
+            "contest_type": "state_treasurer",
+            "winner": "REP",
+            "margin_pct": -100.0
+          },
+          {
+            "contest_type": "us_senate",
+            "winner": "REP",
+            "margin_pct": -42.48
+          }
+        ],
+        "summary": "state_treasurer REP R100.00; president REP R42.69; us_senate REP R42.48; secretary_of_state REP R42.29"
+      }
+    ]
+  }
+}

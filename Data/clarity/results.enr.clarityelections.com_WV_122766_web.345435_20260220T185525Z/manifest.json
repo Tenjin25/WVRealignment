@@ -1,0 +1,81 @@
+{
+  "source_url": "https://results.enr.clarityelections.com/WV/122766/web.345435/ngsw.json?ngsw-cache-bust=0.9594799439516782",
+  "web_base": "https://results.enr.clarityelections.com/WV/122766/web.345435/",
+  "downloaded": [
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/config.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0001_WV_122766_356048_json_config.json.json",
+      "sha256": "78292ed41040455b998725bdda012ab0b0bd438c27d902795578de956bd7603d"
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/colors.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0002_WV_122766_356048_json_colors.json.json",
+      "sha256": "dffe357d6345e1604948494f08f5068a2e0c9ffdbf871f9442f975ba4b63b72f"
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/details.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0003_WV_122766_356048_json_details.json.json",
+      "sha256": "e1a0f1e6a4343e88cc702dc87fc3309848ddc044b6d9be945a4766184c6b03c6"
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/status.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0004_WV_122766_356048_json_status.json.json",
+      "sha256": "d5b200d0f0d891eb2704031a9e08a2811b8c6b85b6dc7799117eac8f6b72595a"
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/sum.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0005_WV_122766_356048_json_sum.json.json",
+      "sha256": "3afbeeb94d30d7768577254d6f52dd2d0ce16b1582221afe1b2324b833c39565"
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/vt.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0006_WV_122766_356048_json_vt.json.json",
+      "sha256": "ee868bfea6240d6a6f8f7efe49c03242028780a9acb21556cb20e405c726a9a4"
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/en/electionsettings.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0007_WV_122766_356048_json_en_electionsettings.json.json",
+      "sha256": "bf1d297dfddbf63fc14f4989f7846db738e2256b48f247d6ca429ad151a87c68"
+    },
+    {
+      "url": "https://results.enr.clarityelections.com/WV/122766/356048/json/en/summary.json",
+      "status": 200,
+      "content_type": "application/json",
+      "file": "Data\\clarity\\results.enr.clarityelections.com_WV_122766_web.345435_20260220T185525Z\\0008_WV_122766_356048_json_en_summary.json.json",
+      "sha256": "8a6251a7f6a77a67b0c4f25fb9b13ac8d07f6a6ca4772542212434bd1a7b1699"
+    }
+  ],
+  "attempted_at_utc": "20260220T185525Z",
+  "deterministic": {
+    "mode": "deterministic_v4",
+    "web_base": "https://results.enr.clarityelections.com/WV/122766/web.345435/",
+    "web_json_url": "https://results.enr.clarityelections.com/WV/122766/web.345435/web.json",
+    "web_json_status": 200,
+    "state": "WV",
+    "county": "",
+    "eid": "122766",
+    "json_uri": "https://results.enr.clarityelections.com/",
+    "version_url": "https://results.enr.clarityelections.com/WV/122766/current_ver.txt",
+    "version_status": 200,
+    "version": "356048",
+    "json_root": "https://results.enr.clarityelections.com/WV/122766/356048/json",
+    "config_url": "https://results.enr.clarityelections.com/WV/122766/356048/json/config.json",
+    "config_status": 200,
+    "lang": "en"
+  },
+  "probe_count": 23
+}
