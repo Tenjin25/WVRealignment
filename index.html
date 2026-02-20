@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <style>
+  <meta charset='utf-8'>
+<style>
   /* Universal box-sizing for consistent sizing */
   *, *::before, *::after {
     box-sizing: border-box;
@@ -123,9 +123,9 @@
   body.colorblind-mode .legend-color[style*="background: #08306b"] { background: #004d99 !important; } /* Annihilation D */
   </style>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-  <title>West Virginia Political Realignment Map (2024)</title>
-  <meta property="og:title" content="WV Political Realignment Map (2024)">
-  <meta property="og:description" content="Interactive visualization of West Virginia's 2024 county-level election results.">
+  <title>West Virginia Political Realignment Map (1950-2024)</title>
+  <meta property="og:title" content="PA Political Realignment Map (2000-2024)">
+  <meta property="og:description" content="Interactive visualization of West Virginia county-level election trends from 1950 to 2024.">
   <script>
     // Define toggleSidebar function before DOMContentLoaded
     function toggleSidebar() {
@@ -251,10 +251,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <meta charset='utf-8'>
-    <title>West Virginia Political Realignment Map (2024)</title>
+    <title>West Virginia Political Realignment Map (1950-2024)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes'>
-    <meta property="og:title" content="WV Political Realignment Map (2024)">
-    <meta property="og:description" content="Interactive visualization of West Virginia's county-level election results and margins.">
+    <meta property="og:title" content="OH Political Realignment Map (2000-2024)">
+    <meta property="og:description" content="Interactive visualization of West Virginia political realignment by county across available statewide contests.">
     <meta property="og:image" content="preview.png">
     <meta name="twitter:card" content="summary_large_image">
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet'>
@@ -1034,7 +1034,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- Sidebar for County Details and Analysis (single instance only) -->
     <div class="sidebar minimized" id="sidebar">
       <div class="sidebar-header" id="sidebar-header">
-        <h3>ðŸ“Š County Analysis</h3>
+        <h3>County Analysis</h3>
         <button class="minimize-btn" id="sidebar-minimize-btn">+</button>
       </div>
       <div class="sidebar-content">
@@ -1048,7 +1048,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <label for="county-search" style="font-weight:600;">Search County:</label>
           <input type="text" id="county-search" placeholder="Type county name..." autocomplete="off" spellcheck="false" style="width:100%;padding:8px;border-radius:6px;margin-top:6px;margin-bottom:6px;border:1px solid #d1d5db;" />
         </div>
-        <h4 id="statewide">ðŸ›ï¸ West Virginia Statewide</h4>
+        <h4 id="statewide">West Virginia Statewide</h4>
   <div style="margin:18px 0 8px 0; border-bottom:2px solid #e5e7eb;"></div>
    <div class="statewide-results" id="statewide-results">
   <h4 id="contest-name" style="margin:0 0 15px 0; font-size:16px; font-weight:700; color:#1f2937;"></h4>
@@ -1057,29 +1057,41 @@ document.addEventListener('DOMContentLoaded', function() {
         <div id="statewide-temperature-bar" style="width:100%;height:24px;margin:12px 0;display:none;"></div>
       </div>
     </div>
-        <div class="finding-card" style="margin-top:16px;">
+                <div class="findings-section">
+          <h4>Research Findings: West Virginia Electoral Realignment</h4>
+
+          <div class="finding-card">
             <h5>West Virginia Scope</h5>
-            <p><strong>Data:</strong> West Virginia county-level general election returns across available years (currently 1950-2024, 55 counties).</p>
-            <p><strong>Available statewide contests:</strong> President, U.S. Senate, Governor, Secretary of State, Attorney General, Auditor, State Treasurer.</p>
-            <p><strong>Source pipeline:</strong> Clarity results -> OpenElections county CSV -> aggregated JSON for this map.</p>
+            <p><strong>Coverage:</strong> 1950-2024 across 55 counties.</p>
+            <p><strong>Contests:</strong> President, U.S. Senate, Governor, Secretary of State, Attorney General, Auditor, Commissioner of Agriculture, and State Treasurer.</p>
+            <p><strong>Pipeline:</strong> Clarity/OpenElections precinct-county inputs aggregated into WV county-level JSON.</p>
           </div>
-          <div class="finding-card" id="wv-research-findings-card" style="margin-top:16px;">
-            <h5>West Virginia Research Findings</h5>
-            <div id="wv-research-findings-content"><p><strong>Coverage:</strong> 1950-2024 (55 counties)</p>
-<ul style="margin:0;padding-left:18px;">
-  <li><strong>Focus Contest:</strong> president</li>
-  <li><strong>Statewide Shift:</strong> -34.53 points toward DEM from 1956 to 2024</li>
-  <li><strong>Latest Presidential:</strong> REP R+42.69</li>
-</ul></div>
+
+          <div class="finding-card">
+            <h5>Statewide Presidential Trend</h5>
+            <p><strong>1956:</strong> Republican +8.16 statewide.</p>
+            <p><strong>2024:</strong> Republican +42.69 statewide.</p>
+            <p><strong>Net change:</strong> 34.53-point shift toward Republicans over the observed period.</p>
           </div>
-                    <div class="finding-card" id="wv-detailed-description-card" style="margin-top:16px;">
-            <h5>West Virginia Detailed Findings</h5>
-            <div id="wv-detailed-description-content"><p>This WV-focused dataset covers 1950 through 2024 with county-level returns harmonized across multiple historical source formats.</p><p>Margins are calculated as Democratic minus Republican two-party margin percentage; positive values indicate a Democratic edge and negative values indicate a Republican edge.</p><p>Contest narratives below describe first-to-latest statewide movement and identify the counties with the largest absolute margins in the most recent available year.</p><h6 style='margin:12px 0 6px 0;'>Contest Narratives</h6><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>attorney_general</strong></p><p style='margin:0 0 4px 0;'>In attorney_general, statewide two-party margin moved from D12.98 in 1950 to R40.05 in 2024, a 53.03-point shift toward Republicans.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Grant (R+77.52), Doddridge (R+71.93), Ritchie (R+68.79)</p></div><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>auditor</strong></p><p style='margin:0 0 4px 0;'>In auditor, statewide two-party margin moved from R51.69 in 1952 to R37.43 in 2024, a 14.26-point shift toward Democrats.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Grant (R+75.67), Doddridge (R+67.73), Ritchie (R+66.53)</p></div><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>commissioner_of_agriculture</strong></p><p style='margin:0 0 4px 0;'>In commissioner_of_agriculture, statewide two-party margin moved from D9.21 in 1952 to R38.28 in 2024, a 47.49-point shift toward Republicans.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Doddridge (R+71.04), Grant (R+70.26), Ritchie (R+70.00)</p></div><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>governor</strong></p><p style='margin:0 0 4px 0;'>In governor, statewide two-party margin moved from D3.09 in 1952 to R32.50 in 2024, a 35.59-point shift toward Republicans.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Grant (R+77.22), Ritchie (R+64.73), Hampshire (R+62.43)</p></div><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>president</strong></p><p style='margin:0 0 4px 0;'>In president, statewide two-party margin moved from R8.16 in 1956 to R42.69 in 2024, a 34.53-point shift toward Republicans.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Grant (R+79.93), Mingo (R+74.70), Doddridge (R+74.34)</p></div><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>secretary_of_state</strong></p><p style='margin:0 0 4px 0;'>In secretary_of_state, statewide two-party margin moved from D7.40 in 1952 to R42.29 in 2024, a 49.69-point shift toward Republicans.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Grant (R+78.81), Doddridge (R+73.79), Ritchie (R+72.00)</p></div><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>state_treasurer</strong></p><p style='margin:0 0 4px 0;'>In state_treasurer, statewide two-party margin moved from D14.46 in 1950 to R100.00 in 2024, a 114.46-point shift toward Republicans.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Barbour (R+100.00), Berkeley (R+100.00), Boone (R+100.00)</p></div><div style='margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;'><p style='margin:0 0 4px 0;'><strong>us_senate</strong></p><p style='margin:0 0 4px 0;'>In us_senate, statewide two-party margin moved from D7.24 in 1952 to R42.48 in 2024, a 49.72-point shift toward Republicans.</p><p style='margin:0;color:#4b5563;'><em>Strongest recent counties:</em> Grant (R+78.94), Wyoming (R+73.31), Mingo (R+72.96)</p></div></div>
+
+          <div class="finding-card">
+            <h5>Largest County-Level Directional Shifts (President)</h5>
+            <ul>
+              <li>Raleigh: D+49.82 to R+55.25</li>
+              <li>Mingo: D+11.70 to R+74.70</li>
+              <li>Logan: D+16.57 to R+67.43</li>
+              <li>McDowell: D+20.45 to R+61.24</li>
+              <li>Webster: D+11.12 to R+67.60</li>
+            </ul>
           </div>
-          <div class="finding-card" id="wv-year-highlights-card" style="margin-top:16px;">
-            <h5>West Virginia Year Highlights</h5>
-            <div id="wv-year-highlights-content"><h6 style='margin:0 0 6px 0;'>Largest Shifts Toward Republican</h6><ul style='margin:0;padding-left:18px;'><li>Raleigh: D+49.82 -> R+55.25 (-105.07 toward DEM)</li><li>Mingo: D+11.70 -> R+74.70 (-86.40 toward DEM)</li><li>Logan: D+16.57 -> R+67.43 (-84.00 toward DEM)</li><li>McDowell: D+20.45 -> R+61.24 (-81.69 toward DEM)</li><li>Webster: D+11.12 -> R+67.60 (-78.72 toward DEM)</li></ul><h6 style='margin:12px 0 6px 0;'>Largest Shifts Toward Democratic</h6><ul style='margin:0;padding-left:18px;'><li>Monongalia: R+12.09 -> R+4.51 (7.58 toward DEM)</li><li>Randolph: R+48.24 -> R+47.06 (1.18 toward DEM)</li><li>Cabell: R+22.15 -> R+22.35 (-0.20 toward DEM)</li><li>Ohio: R+25.38 -> R+26.56 (-1.18 toward DEM)</li><li>Kanawha: R+7.63 -> R+17.83 (-10.20 toward DEM)</li></ul><h6 style='margin:12px 0 6px 0;'>Recent Year Summaries</h6><ul style='margin:0;padding-left:18px;'><li><strong>2024:</strong> state_treasurer REP R100.00; president REP R42.69; us_senate REP R42.48; secretary_of_state REP R42.29</li><li><strong>2020:</strong> us_senate REP R44.49; president REP R39.60; governor REP R35.50; auditor REP R34.05</li><li><strong>2018:</strong> us_senate DEM D3.45</li><li><strong>2016:</strong> president REP R44.32; auditor REP R25.71; attorney_general REP R10.34; commissioner_of_agriculture REP R7.95</li><li><strong>2012:</strong> secretary_of_state DEM D29.67; president REP R23.73; us_senate DEM D23.05; auditor DEM D22.24</li><li><strong>2010:</strong> us_senate DEM D10.04</li><li><strong>2008:</strong> auditor DEM D100.00; state_treasurer DEM D100.00; governor DEM D47.75; secretary_of_state DEM D32.35</li><li><strong>2006:</strong> us_senate DEM D31.29</li></ul></div>
+
+          <div class="finding-card">
+            <h5>Recent Snapshot</h5>
+            <p><strong>2024:</strong> Republican leads in president (R+42.69), U.S. Senate (R+42.48), and secretary of state (R+42.29).</p>
+            <p><strong>Notable exception:</strong> 2018 U.S. Senate remained Democratic (+3.45).</p>
           </div>
+        </div>
+      </div>
       <div class="sidebar-footer" style="padding: 16px 0; text-align: center; color: #888; font-size: 15px; border-top: 1px solid #e5e7eb; background: #f9fafb;">
         Created by Shamar Davis
       </div>
@@ -1098,7 +1110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Main Controls Dropdown (Contest Selector) -->
     <div class="main-controls" id="main-controls">
         <div class="controls-header" style="display:flex;align-items:center;justify-content:space-between;">
-            <h3>ðŸ—³ï¸ West Virginia Election Contests</h3>
+            <h3>West Virginia Election Contests</h3>
             <div style="display:flex;align-items:center;gap:8px;">
               <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn">-</button>
             </div>
@@ -1106,9 +1118,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="controls-content" id="controls-content">
             <div class="control-group">
                 <div style="display:flex;align-items:center;gap:8px;">
-                  <label>ðŸ“Š Contest Type:</label>
-                  <button id="accessibility-toggle" title="Accessibility: Color Blind Mode" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;">CB</button>
-                  <button id="labels-toggle" title="Toggle County Labels" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;">ðŸ·ï¸</button>
+                  <label>Contest Type:</label>
+                  <button id="accessibility-toggle" title="Accessibility: Color Blind Mode" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;">♿</button>
+                  <button id="labels-toggle" title="Toggle County Labels" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;">🏷️</button>
                 </div>
                 <select id="contestSelect">
                     <option value="">Select a Contest...</option>
@@ -1152,12 +1164,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. Get free token at https://www.mapbox.com/account/tokens
     // 2. Replace 'YOUR_MAPBOX_TOKEN_HERE' with your actual token
     const CONFIG = {
-      mapboxToken: 'pk.eyJ1Ijoic2hhbWFyZGF2aXMiLCJhIjoiY21sajF2czdnMDlqMjNlcTRrcm5iczdnMSJ9.OopZliDOcTI8TpEEqW8fkQ',
+      mapboxToken: 'YOUR_MAPBOX_PUBLIC_TOKEN',
       paths: {
         counties: './Data/tl_2020_54_county20/tl_2020_54_county20.geojson',
-        election: './Data/wv_election_results_aggregated.json',
-        findings: './Data/wv_research_findings.json',
-        findingsMarkdown: './Data/wv_research_findings.md'
+        election: './Data/wv_election_results_aggregated.json'
       },
       center: [-80.62, 38.64],
       zoom: 6.6,
@@ -1168,7 +1178,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const map = new mapboxgl.Map({ container: 'map', style: 'mapbox://styles/mapbox/streets-v12', center: CONFIG.center, zoom: CONFIG.zoom });
 
-    let electionDataJSON = null; // Aggregated WV election JSON
+    let electionDataJSON = null; // New JSON structure from mn_elections_aggregated.json
     let electionData = null; // Flattened array for compatibility
     let districtsInfo = null;
     let stateHouseInfo = null;
@@ -1176,7 +1186,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let countyNameMap = {};
     let currentView = 'counties'; // 'counties', 'districts', 'state_house', 'state_senate'
     let currentElectionResults = null; // Current contest results for county details
-    let researchFindingsJSON = null;
 
 
     function setStatus(text, timeout = 4000) {
@@ -1199,21 +1208,6 @@ document.addEventListener('DOMContentLoaded', function() {
       return r.text();
     }
 
-    function renderFindingsFallbackText(text) {
-      const summaryEl = document.getElementById('wv-research-findings-content');
-      const detailEl = document.getElementById('wv-detailed-description-content');
-      const yearEl = document.getElementById('wv-year-highlights-content');
-      if (summaryEl) {
-        summaryEl.innerHTML = '<p><strong>West Virginia Research Findings</strong></p>';
-      }
-      if (detailEl) {
-        detailEl.innerHTML = `<pre style="white-space:pre-wrap;line-height:1.35;font-size:12px;">${escapeHtml(text)}</pre>`;
-      }
-      if (yearEl) {
-        yearEl.innerHTML = '<p>Loaded fallback Markdown findings.</p>';
-      }
-    }
-
     function parseCSV(csvText) {
       try {
         const result = Papa.parse(csvText, {
@@ -1230,119 +1224,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setStatus('CSV Parse Exception: ' + err.message);
         console.error(err);
         return [];
-      }
-    }
-
-    function escapeHtml(value) {
-      return String(value || '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-    }
-
-    function formatPartyMargin(v) {
-      const n = Number(v || 0);
-      if (n > 0) return `D+${Math.abs(n).toFixed(2)}`;
-      if (n < 0) return `R+${Math.abs(n).toFixed(2)}`;
-      return 'T+0.00';
-    }
-
-    function renderResearchFindings(findings) {
-      const summaryEl = document.getElementById('wv-research-findings-content');
-      const detailEl = document.getElementById('wv-detailed-description-content');
-      const yearEl = document.getElementById('wv-year-highlights-content');
-      if (!summaryEl && !detailEl && !yearEl) return;
-
-      const detail = findings?.detailed_description || {};
-      const metadata = findings?.metadata || {};
-      const years = metadata.years || [];
-      const narratives = detail.contest_narratives || [];
-      const yearSummaries = detail.year_summaries || [];
-      const overviewParagraphs = detail.overview_paragraphs || [];
-      const topRep = findings?.top_shift_toward_republican || [];
-      const topDem = findings?.top_shift_toward_democratic || [];
-      const pres = findings?.latest_presidential_statewide || {};
-
-      const coverage = years.length ? `${years[0]}-${years[years.length - 1]}` : 'N/A';
-      const shift = Number(findings?.focus_statewide_shift_toward_dem_pct || 0);
-
-      if (summaryEl) {
-        summaryEl.innerHTML = `
-          <p><strong>Coverage:</strong> ${coverage} (${metadata.counties_count || 'N/A'} counties)</p>
-          <ul style="margin:0;padding-left:18px;">
-            <li><strong>Focus Contest:</strong> ${escapeHtml(findings?.focus_contest || 'N/A')}</li>
-            <li><strong>Statewide Shift:</strong> ${shift.toFixed(2)} points toward DEM from ${findings?.focus_earliest_year || 'N/A'} to ${findings?.focus_latest_year || 'N/A'}</li>
-            <li><strong>Latest Presidential:</strong> ${escapeHtml(String(pres.winner || 'N/A'))} ${formatPartyMargin(pres.margin_pct || 0)}</li>
-          </ul>
-        `;
-      }
-
-      if (detailEl) {
-        const overviewHtml = overviewParagraphs.map(p => `<p>${escapeHtml(p)}</p>`).join('');
-        const narrativeHtml = narratives.slice(0, 10).map(n => {
-          const topCounties = (n.strongest_counties_latest || [])
-            .slice(0, 3)
-            .map(c => `${escapeHtml(c.county)} (${formatPartyMargin(c.margin_pct)})`)
-            .join(', ');
-          return `
-            <div style="margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #e5e7eb;">
-              <p style="margin:0 0 4px 0;"><strong>${escapeHtml(formatContestName(n.contest_type, ''))}</strong></p>
-              <p style="margin:0 0 4px 0;">${escapeHtml(n.description || '')}</p>
-              <p style="margin:0;color:#4b5563;"><em>Strongest recent counties:</em> ${escapeHtml(topCounties || 'N/A')}</p>
-            </div>
-          `;
-        }).join('');
-
-        detailEl.innerHTML = `
-          ${overviewHtml}
-          <h6 style="margin:12px 0 6px 0;">Contest Narratives</h6>
-          ${narrativeHtml || '<p>No detailed narratives available.</p>'}
-        `;
-      }
-
-      if (yearEl) {
-        const shiftRepHtml = topRep.slice(0, 5).map(r => (
-          `<li>${escapeHtml(r.county)}: ${formatPartyMargin(r.earliest_margin_pct)} -> ${formatPartyMargin(r.latest_margin_pct)} (${Number(r.shift_toward_dem_pct || 0).toFixed(2)} toward DEM)</li>`
-        )).join('');
-        const shiftDemHtml = topDem.slice(0, 5).map(r => (
-          `<li>${escapeHtml(r.county)}: ${formatPartyMargin(r.earliest_margin_pct)} -> ${formatPartyMargin(r.latest_margin_pct)} (${Number(r.shift_toward_dem_pct || 0).toFixed(2)} toward DEM)</li>`
-        )).join('');
-        const yearHtml = yearSummaries
-          .slice(-8)
-          .reverse()
-          .map(y => `<li><strong>${y.year}:</strong> ${escapeHtml(y.summary || '')}</li>`)
-          .join('');
-
-        yearEl.innerHTML = `
-          <h6 style="margin:0 0 6px 0;">Largest Shifts Toward Republican</h6>
-          <ul style="margin:0 0 10px 0;padding-left:18px;">${shiftRepHtml || '<li>Not available.</li>'}</ul>
-          <h6 style="margin:0 0 6px 0;">Largest Shifts Toward Democratic</h6>
-          <ul style="margin:0 0 10px 0;padding-left:18px;">${shiftDemHtml || '<li>Not available.</li>'}</ul>
-          <h6 style="margin:0 0 6px 0;">Recent Year Summaries</h6>
-          <ul style="margin:0;padding-left:18px;">${yearHtml || '<li>Not available.</li>'}</ul>
-        `;
-      }
-    }
-
-    async function loadResearchFindings() {
-      try {
-        researchFindingsJSON = await loadJSON(CONFIG.paths.findings);
-        renderResearchFindings(researchFindingsJSON);
-      } catch (err) {
-        try {
-          const md = await loadCSV(CONFIG.paths.findingsMarkdown);
-          renderFindingsFallbackText(md);
-        } catch (mdErr) {
-          const message = `<p>Research findings could not be loaded: ${escapeHtml(err.message)} | ${escapeHtml(mdErr.message)}</p>`;
-          const summaryEl = document.getElementById('wv-research-findings-content');
-          const detailEl = document.getElementById('wv-detailed-description-content');
-          const yearEl = document.getElementById('wv-year-highlights-content');
-          if (summaryEl) summaryEl.innerHTML = message;
-          if (detailEl) detailEl.innerHTML = message;
-          if (yearEl) yearEl.innerHTML = message;
-        }
       }
     }
 
@@ -1367,9 +1248,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'US Senate': 'us_senate',
             'Attorney General': 'attorney_general',
             'Secretary of State': 'secretary_of_state',
-            'Auditor of State': 'auditor',
-            'State Auditor': 'auditor',
-            'Auditor General': 'auditor',
+            'Auditor of State': 'auditor_general',
+            'State Auditor': 'auditor_general',
+            'Auditor General': 'auditor_general',
             'Treasurer of State': 'state_treasurer',
             'Treasure of State': 'state_treasurer',
             'State Treasurer': 'state_treasurer',
@@ -1423,10 +1304,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'United States Senator': 'us_senate',
         'United States Senator (Special Election)': 'us_senate_special',
         'Attorney General': 'attorney_general',
-        'Auditor': 'auditor',
-        'State Auditor': 'auditor',
         'Chief Financial Officer': 'cfo',
-        'Commissioner of Agriculture': 'commissioner_of_agriculture'
+        'Commissioner of Agriculture': 'agriculture_commissioner'
       };
       
       const officeType = officeMap[office] || office.toLowerCase().replace(/ /g, '_');
@@ -1497,8 +1376,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         'us_senate_special': 'United States Senator (Special Election)',
         'secretary_of_state': 'Secretary of State',
         'attorney_general': 'Attorney General',
-        'auditor': 'Auditor',
-        'auditor_general': 'Auditor',
+        'auditor_general': 'Auditor General',
         'state_treasurer': 'State Treasurer',
         'us_house': 'US House',
         'state_senate': 'State Senate',
@@ -1510,7 +1388,6 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         'agr': 'Commissioner of Agriculture',
         'atg': 'Attorney General',
         'cfo': 'Chief Financial Officer',
-        'commissioner_of_agriculture': 'Commissioner of Agriculture',
         'str': 'State Representative',
         'sts': 'State Senator',
         'ctj': 'Circuit Judge',
@@ -1556,7 +1433,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         spinner.innerHTML = '<svg width="18" height="18" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4" transform="rotate(-90 25 25)"/></svg>';
         sel.parentNode.insertBefore(spinner, sel.nextSibling);
       }
-      const contestTypes = ['president', 'us_senate', 'us_senate_special', 'governor', 'secretary_of_state', 'attorney_general', 'auditor', 'state_treasurer', 'commissioner_of_agriculture'];
+      const contestTypes = ['president', 'us_senate', 'us_senate_special', 'governor', 'secretary_of_state', 'attorney_general', 'auditor_general', 'state_treasurer'];
       // Precompute contest/year pairs in a single pass
       const contestYearPairs = {};
       csvData.forEach(row => {
@@ -1576,9 +1453,8 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         'us_senate_special': 'U.S. Senate Special Elections',
         'secretary_of_state': 'Secretary of State Elections',
         'attorney_general': 'Attorney General Elections',
-        'auditor': 'Auditor Elections',
-        'state_treasurer': 'State Treasurer Elections',
-        'commissioner_of_agriculture': 'Commissioner of Agriculture Elections'
+        'auditor_general': 'Auditor General Elections',
+        'state_treasurer': 'State Treasurer Elections'
       };
       
       contestTypes.forEach(contestType => {
@@ -1798,11 +1674,11 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       // Update sidebar title
       const sidebarTitle = document.querySelector('.sidebar-header h3');
       const titles = {
-        'counties': 'ðŸ“Š County Analysis',
-        'districts': 'ðŸ“Š Congressional District Analysis', 
-        'state_house': 'ðŸ“Š State House District Analysis',
-        'state_senate': 'ðŸ“Š State Senate District Analysis',
-        'vtds_2000': 'ðŸ“Š 2000 Precinct Analysis'
+        'counties': 'County Analysis',
+        'districts': 'Congressional District Analysis', 
+        'state_house': 'State House District Analysis',
+        'state_senate': 'State Senate District Analysis',
+        'vtds_2000': '2000 Precinct Analysis'
       };
       sidebarTitle.textContent = titles[view];
       
@@ -2063,16 +1939,16 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       }
       // Card-style layout
       sidebarContent += '<div class="result-summary">';
-      sidebarContent += '<h3 class="sidebar-section-title">ðŸ“Š Election Results</h3>';
+      sidebarContent += '<h3 class="sidebar-section-title">Election Results</h3>';
       if (precincts) sidebarContent += `<div style="font-size:14px;"><b>Precincts:</b> ${precincts}</div>`;
       sidebarContent += `<div style="font-size:14px;margin-bottom:10px;"><b>Total Votes:</b> ${totalVotes.toLocaleString()}</div>`;
       sidebarContent += `</div>`;
     sidebarContent += `<div class="winner-section">`;
-  sidebarContent += '<h3 class="sidebar-section-title">ðŸ† Winner</h3>';
+  sidebarContent += '<h3 class="sidebar-section-title">Winner</h3>';
   sidebarContent += `<p class="sidebar-winner" style="color: ${winnerColor}; font-weight: bold;">${winnerCandidate} (${winner === 'Republican' ? 'R' : 'D'})</p>`;
   sidebarContent += `</div>`;
   sidebarContent += `<div class="margin-section">`;
-  sidebarContent += '<h3 class="sidebar-section-title">ðŸ“ˆ Margin</h3>';
+  sidebarContent += '<h3 class="sidebar-section-title">Margin</h3>';
   let marginColor = winnerColor;
   if (winner !== 'Republican') {
     marginColor = isColorblind ? cbColorForMargin(parseFloat(marginPct), 'D') : '#2563eb';
@@ -2081,7 +1957,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
   sidebarContent += `<p class="sidebar-margin-details" style="color: #6b7280;">(${Math.abs(margin).toLocaleString()} vote margin)</p>`;
   sidebarContent += `</div>`;
   sidebarContent += `<div class="vote-breakdown">`;
-  sidebarContent += '<h3 class="sidebar-section-title">ðŸ—³ï¸ Vote Breakdown</h3>';
+  sidebarContent += '<h3 class="sidebar-section-title">Vote Breakdown</h3>';
   // For colorblind mode, use the correct accessibility palette for Republican vote breakdown
   let repColor = '#ef3b2c';
   if (isColorblind) {
@@ -2157,7 +2033,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
     else if (competitiveness.includes('Tilt')) compColor = '#bfdbfe';
   }
   sidebarContent += `<div class="competitiveness-section">`;
-  sidebarContent += '<h5>ðŸŽ¯ Competitiveness</h5>';
+  sidebarContent += '<h5>Competitiveness</h5>';
   sidebarContent += `<p style="color: ${compColor}; font-weight: bold; font-size: 16px;">${competitiveness}</p>`;
   if (actualMarginPct <= 0.5) {
     sidebarContent += `<p style="color: #f59e0b; font-style: italic;">(Extremely close!)</p>`;
@@ -2699,7 +2575,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       if (districtInfo) {
         demographicInfo = `
           <div style="margin-bottom: 16px;">
-            <h5>ðŸ‘¥ Demographics (VAP)</h5>
+            <h5>Demographics (VAP)</h5>
             <p><strong>Total Population:</strong> ${districtInfo.total_population.toLocaleString()}</p>
             <p><strong>White:</strong> ${districtInfo.white_vap_pct}%</p>
             <p><strong>Black:</strong> ${districtInfo.black_vap_pct}%</p>
@@ -2772,17 +2648,17 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
             
             electionInfo = `
               <div style="margin-bottom: 16px;">
-                <h5>ðŸŽ¯ Competitiveness</h5>
+                <h5>Competitiveness</h5>
                 <p style="color: ${compColor}; font-weight: bold; font-size: 16px;">${competitiveness}</p>
               </div>
               <div style="margin-bottom: 16px;">
-                <h5>ðŸ“ˆ Margin</h5>
+                <h5>Margin</h5>
                 <p style="color: ${winner === 'Republican' ? '#dc2626' : '#1e40af'}; font-weight: bold; font-size: 18px;">
                   ${winner} +${marginPct.toFixed(1)}%
                 </p>
               </div>
               <div style="margin-bottom: 16px;">
-                <h5>ðŸ—³ï¸ Vote Breakdown</h5>
+                <h5>Vote Breakdown</h5>
                 <p><span style="color: #1e40af; font-weight: bold;">Democratic: </span>${demPct.toFixed(1)}% (${demVotes.toLocaleString()})</p>
                 <p><span style="color: #dc2626; font-weight: bold;">Republican: </span>${repPct.toFixed(1)}% (${repVotes.toLocaleString()})</p>
                 <p><strong>Total Votes:</strong> ${totalVotes.toLocaleString()}</p>
@@ -2813,7 +2689,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       if (districtInfo) {
         demographicInfo = `
           <div style="margin-bottom: 16px;">
-            <h5>ðŸ‘¥ Demographics (VAP)</h5>
+            <h5>Demographics (VAP)</h5>
             <p><strong>Total Population:</strong> ${districtInfo.total_population.toLocaleString()}</p>
             <p><strong>White:</strong> ${districtInfo.white_vap_pct}%</p>
             <p><strong>Black:</strong> ${districtInfo.black_vap_pct}%</p>
@@ -2833,7 +2709,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
           // This is complex without a county-to-district mapping, so show general message
           electionInfo = `
             <div style="margin-bottom: 16px;">
-              <h5>ðŸ“Š ${year} ${chamber === 'house' ? 'State House' : 'State Senate'}</h5>
+              <h5>${year} ${chamber === 'house' ? 'State House' : 'State Senate'}</h5>
               <p style="color: #666; font-style: italic;">District-level results require county-to-district mapping. 
               Click to see general trends for this contest type.</p>
             </div>
@@ -2944,9 +2820,6 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
 
     async function init() {
       try {
-        // Static findings cards are pre-rendered in HTML.
-        // await loadResearchFindings();
-
         setStatus('Loading counties...');
         console.log('Loading counties from:', CONFIG.paths.counties);
         const counties = await loadJSON(CONFIG.paths.counties);
@@ -3180,7 +3053,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
       
       map.setPaintProperty('district-fill', 'fill-color', expr);
   document.getElementById('contest-name').textContent = `US House (${year})`;
-      setStatus(`Applied contest: WV US House ${year}`);
+      setStatus(`Applied contest: FL US House ${year}`);
     }
 
     function applyStatewideContestToDistricts(contestType, year) {
@@ -3237,7 +3110,6 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
   </script>
 </body>
 </html>
-
 
 
 
