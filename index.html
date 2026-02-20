@@ -1248,15 +1248,17 @@ document.addEventListener('DOMContentLoaded', function() {
             'US Senate': 'us_senate',
             'Attorney General': 'attorney_general',
             'Secretary of State': 'secretary_of_state',
-            'Auditor of State': 'auditor_general',
-            'State Auditor': 'auditor_general',
-            'Auditor General': 'auditor_general',
+            'Auditor of State': 'auditor',
+            'State Auditor': 'auditor',
+            'Auditor General': 'auditor',
+            'Commissioner of Agriculture': 'commissioner_of_agriculture',
             'Treasurer of State': 'state_treasurer',
             'Treasure of State': 'state_treasurer',
             'State Treasurer': 'state_treasurer',
             'Justice of the Supreme Court': 'supreme_court'
           };
           const mappedOfficeType = officeTypeMap[officeType] || officeType.toLowerCase().replace(/[.\s]+/g, '_');
+          const normalizedOfficeType = mappedOfficeType === 'auditor_general' ? 'auditor' : mappedOfficeType;
           
           Object.keys(contests).forEach(contestKey => {
             const contest = contests[contestKey];
@@ -1275,15 +1277,15 @@ document.addEventListener('DOMContentLoaded', function() {
               }
               
               // Add this office type's data to the record
-              recordsMap[key][`${mappedOfficeType}_dem`] = countyData.dem_votes || 0;
-              recordsMap[key][`${mappedOfficeType}_rep`] = countyData.rep_votes || 0;
-              recordsMap[key][`${mappedOfficeType}_other`] = countyData.other_votes || 0;
-              recordsMap[key][`${mappedOfficeType}_total`] = countyData.total_votes || 0;
-              recordsMap[key][`${mappedOfficeType}_dem_candidate`] = countyData.dem_candidate || '';
-              recordsMap[key][`${mappedOfficeType}_rep_candidate`] = countyData.rep_candidate || '';
-              recordsMap[key][`${mappedOfficeType}_margin`] = countyData.margin || 0;
-              recordsMap[key][`${mappedOfficeType}_margin_pct`] = countyData.margin_pct || 0;
-              recordsMap[key][`${mappedOfficeType}_winner`] = countyData.winner || '';
+              recordsMap[key][`${normalizedOfficeType}_dem`] = countyData.dem_votes || 0;
+              recordsMap[key][`${normalizedOfficeType}_rep`] = countyData.rep_votes || 0;
+              recordsMap[key][`${normalizedOfficeType}_other`] = countyData.other_votes || 0;
+              recordsMap[key][`${normalizedOfficeType}_total`] = countyData.total_votes || 0;
+              recordsMap[key][`${normalizedOfficeType}_dem_candidate`] = countyData.dem_candidate || '';
+              recordsMap[key][`${normalizedOfficeType}_rep_candidate`] = countyData.rep_candidate || '';
+              recordsMap[key][`${normalizedOfficeType}_margin`] = countyData.margin || 0;
+              recordsMap[key][`${normalizedOfficeType}_margin_pct`] = countyData.margin_pct || 0;
+              recordsMap[key][`${normalizedOfficeType}_winner`] = countyData.winner || '';
             });
           });
         });
@@ -1304,8 +1306,10 @@ document.addEventListener('DOMContentLoaded', function() {
         'United States Senator': 'us_senate',
         'United States Senator (Special Election)': 'us_senate_special',
         'Attorney General': 'attorney_general',
+        'Auditor': 'auditor',
+        'Auditor General': 'auditor',
         'Chief Financial Officer': 'cfo',
-        'Commissioner of Agriculture': 'agriculture_commissioner'
+        'Commissioner of Agriculture': 'commissioner_of_agriculture'
       };
       
       const officeType = officeMap[office] || office.toLowerCase().replace(/ /g, '_');
@@ -1376,7 +1380,9 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         'us_senate_special': 'United States Senator (Special Election)',
         'secretary_of_state': 'Secretary of State',
         'attorney_general': 'Attorney General',
-        'auditor_general': 'Auditor General',
+        'auditor': 'Auditor',
+        'auditor_general': 'Auditor',
+        'commissioner_of_agriculture': 'Commissioner of Agriculture',
         'state_treasurer': 'State Treasurer',
         'us_house': 'US House',
         'state_senate': 'State Senate',
@@ -1433,7 +1439,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         spinner.innerHTML = '<svg width="18" height="18" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4" transform="rotate(-90 25 25)"/></svg>';
         sel.parentNode.insertBefore(spinner, sel.nextSibling);
       }
-      const contestTypes = ['president', 'us_senate', 'us_senate_special', 'governor', 'secretary_of_state', 'attorney_general', 'auditor_general', 'state_treasurer'];
+      const contestTypes = ['president', 'us_senate', 'us_senate_special', 'governor', 'secretary_of_state', 'attorney_general', 'auditor', 'commissioner_of_agriculture', 'state_treasurer'];
       // Precompute contest/year pairs in a single pass
       const contestYearPairs = {};
       csvData.forEach(row => {
@@ -1453,7 +1459,8 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         'us_senate_special': 'U.S. Senate Special Elections',
         'secretary_of_state': 'Secretary of State Elections',
         'attorney_general': 'Attorney General Elections',
-        'auditor_general': 'Auditor General Elections',
+        'auditor': 'Auditor Elections',
+        'commissioner_of_agriculture': 'Commissioner of Agriculture Elections',
         'state_treasurer': 'State Treasurer Elections'
       };
       
