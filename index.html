@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <style>
   /* Universal box-sizing for consistent sizing */
   *, *::before, *::after {
@@ -147,11 +148,11 @@
           contentEl.innerHTML = '<p>Select a contest or county to see results.</p>';
         }
         if (minimizeBtn) {
-          minimizeBtn.textContent = 'âˆ’';
+          minimizeBtn.textContent = '-';
           minimizeBtn.title = 'Minimize sidebar';
         }
         if (floatBtn) {
-          floatBtn.textContent = 'âˆ’';
+          floatBtn.textContent = '-';
           floatBtn.title = 'Minimize sidebar';
         }
       } else if (sidebar) {
@@ -201,7 +202,7 @@
         };
         // Set initial float button text based on sidebar state
         if (sidebar && !sidebar.classList.contains('minimized')) {
-          floatBtn.textContent = 'âˆ’';
+          floatBtn.textContent = '-';
           floatBtn.title = 'Minimize sidebar';
         } else {
           floatBtn.textContent = '+';
@@ -1089,7 +1090,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- Floating Status Panel -->
   <div class="status-panel" id="status-panel" style="display:none;position:fixed;top:20px;right:90px;z-index:10002;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);padding:18px 24px 18px 18px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.12);border:1px solid #e5e7eb;max-width:340px;min-width:200px;font-size:15px;color:#34495e;">
     <span id="status-message"></span>
-    <button id="status-exit" title="Close" style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:6px;border:none;background:#eee;cursor:pointer;font-weight:bold;font-size:18px;">Ã—</button>
+    <button id="status-exit" title="Close" style="position:absolute;top:10px;right:10px;padding:4px 10px;border-radius:6px;border:none;background:#eee;cursor:pointer;font-weight:bold;font-size:18px;">x</button>
   </div>
     
 
@@ -1099,14 +1100,14 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="controls-header" style="display:flex;align-items:center;justify-content:space-between;">
             <h3>ðŸ—³ï¸ West Virginia Election Contests</h3>
             <div style="display:flex;align-items:center;gap:8px;">
-              <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn">âˆ’</button>
+              <button class="minimize-btn" onclick="toggleMainControls()" id="controls-minimize-btn">-</button>
             </div>
         </div>
         <div class="controls-content" id="controls-content">
             <div class="control-group">
                 <div style="display:flex;align-items:center;gap:8px;">
                   <label>ðŸ“Š Contest Type:</label>
-                  <button id="accessibility-toggle" title="Accessibility: Color Blind Mode" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;">â™¿</button>
+                  <button id="accessibility-toggle" title="Accessibility: Color Blind Mode" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;">CB</button>
                   <button id="labels-toggle" title="Toggle County Labels" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;">ðŸ·ï¸</button>
                 </div>
                 <select id="contestSelect">
@@ -1122,10 +1123,10 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="legend" id="legend">
         <div class="legend-header">
             <h4>Political Categories</h4>
-            <button class="minimize-btn" onclick="toggleLegend()" id="legend-minimize-btn">âˆ’</button>
+            <button class="minimize-btn" onclick="toggleLegend()" id="legend-minimize-btn">-</button>
         </div>
         <div class="legend-content" id="legend-content">
-            <div class="legend-item"><div class="legend-color" style="background: #67000d;"></div>Annihilation Republican (â‰¥40.00%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #67000d;"></div>Annihilation Republican (≥40.00%)</div>
             <div class="legend-item"><div class="legend-color" style="background: #a50f15;"></div>Dominant Republican (30.00-39.99%)</div>
             <div class="legend-item"><div class="legend-color" style="background: #cb181d;"></div>Stronghold Republican (20.00-29.99%)</div>
             <div class="legend-item"><div class="legend-color" style="background: #ef3b2c;"></div>Safe Republican (10.00-19.99%)</div>
@@ -1139,7 +1140,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="legend-item"><div class="legend-color" style="background: #6baed6;"></div>Safe Democratic (10.00-19.99%)</div>
             <div class="legend-item"><div class="legend-color" style="background: #3182bd;"></div>Stronghold Democratic (20.00-29.99%)</div>
             <div class="legend-item"><div class="legend-color" style="background: #08519c;"></div>Dominant Democratic (30.00-39.99%)</div>
-            <div class="legend-item"><div class="legend-color" style="background: #08306b;"></div>Annihilation Democratic (â‰¥40.00%)</div>
+            <div class="legend-item"><div class="legend-color" style="background: #08306b;"></div>Annihilation Democratic (≥40.00%)</div>
         </div>
     </div>
 
@@ -1900,7 +1901,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         // Expand legend
         legend.classList.remove('minimized');
         legendContent.style.display = 'block';
-        minimizeBtn.textContent = 'âˆ’';
+        minimizeBtn.textContent = '-';
         minimizeBtn.title = 'Minimize legend';
       } else {
         // Minimize legend
@@ -1921,7 +1922,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         // Expand controls
         controls.classList.remove('minimized');
         controlsContent.style.display = 'block';
-        minimizeBtn.textContent = 'âˆ’';
+        minimizeBtn.textContent = '-';
         minimizeBtn.title = 'Minimize controls';
       } else {
         // Minimize controls
@@ -1946,12 +1947,12 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         if (sidebarContentEl) sidebarContentEl.style.display = 'block';
         const floatBtn = document.getElementById('sidebar-float-toggle');
         if (floatBtn) {
-          floatBtn.textContent = 'âˆ’';
+          floatBtn.textContent = '-';
           floatBtn.title = 'Minimize sidebar';
         }
         const btn = document.getElementById('sidebar-minimize-btn');
         if (btn) {
-          btn.textContent = 'âˆ’';
+          btn.textContent = '-';
           btn.title = 'Minimize sidebar';
         }
       }
@@ -2219,7 +2220,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
               if (sidebar && sidebar.classList.contains('minimized')) {
                 sidebar.classList.remove('minimized');
                 const btn = document.getElementById('sidebar-minimize-btn');
-                if (btn) btn.textContent = 'âˆ’';
+                if (btn) btn.textContent = '-';
               }
             }
           }
